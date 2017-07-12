@@ -1,0 +1,768 @@
+﻿ID,Parameter,Symbol,Conditions,Min,Typ,Max,Guarantee Level,Export to datasheet,ID,Name,ID,Test Name,Test Number
+HZ06-PSPEC2-7,Power Supply Voltage Range,V VBAT,,2.65,,5.5,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1006,"PSRR (PVDD,VBAT)",HZ06-MVPATE-1006,"PSRR (PVDD,VBAT)",7055
+HZ06-PSPEC2-8,Power Supply Voltage Range,V DVDD,,1.71,,1.89,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1006,"PSRR (PVDD,VBAT)",HZ06-MVPATE-1006,"PSRR (PVDD,VBAT)",7055
+HZ06-PSPEC2-9,VBAT Undervoltage Lockout (UVLO),V VBAT-UVLO,V VBAT  falling,1.76,,2.07,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",No,HZ06-MVPHUB-962,UV_VBAT_POR_FALL,HZ06-MVPATE-962,UV_VBAT_POR_FALL,1885
+HZ06-PSPEC2-10,VBAT Undervoltage Lockout (UVLO),V VBAT-UVLO,V VBAT  rising,1.94,,2.18,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",No,HZ06-MVPHUB-963,UV_VBAT_POR_RISE,HZ06-MVPATE-963,UV_VBAT_POR_RISE,1890
+HZ06-PSPEC2-11,VBAT Undervoltage Lockout (UVLO) Hysteresis,,,,111,,"VII - Production Tested, Internal Only",No,HZ06-MVPHUB-964,UV_VBAT_POR_HYS,HZ06-MVPATE-964,UV_VBAT_POR_HYS,1895
+HZ06-PSPEC2-12,DVDD Undervoltage Lockout (UVLO),V DVDD-UVLO,V DVDD  falling,1,1.2,1.31,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",No,HZ06-MVPHUB-956,UV_DVDD_FALL,HZ06-MVPATE-956,UV_DVDD_FALL,1845
+HZ06-PSPEC2-13,DVDD Undervoltage Lockout (UVLO),V DVDD-UVLO,V DVDD  rising,1.07,1.27,1.38,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",No,HZ06-MVPHUB-957,UV_DVDD_RISE,HZ06-MVPATE-957,UV_DVDD_RISE,1850
+HZ06-PSPEC2-14,DVDD Undervoltage Lockout (UVLO) Hysteresis,,,,70,,"VII - Production Tested, Internal Only",No,HZ06-MVPHUB-958,UV_DVDD_HYS,HZ06-MVPATE-958,UV_DVDD_HYS,1855
+HZ06-PSPEC2-346,Power Supply Ramp Rate VBAT,,,0.1,,10000,VI - Internal Design Target,No,,,,,
+HZ06-PSPEC2-347,Power Supply Ramp Rate DVDD,,,0.1,,10000,VI - Internal Design Target,No,,,,,
+HZ06-PSPEC2-307,Quiescent Current,I VBAT,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense on, AMP_FET_SCALE_MODE = 00b (FET scaling enabled), BST_BYP_MODE = 00b (boost bypass enabled)",,2.5,TBD,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1857,Quiescent Current,HZ06-MVPATE-1885,IBAT_Quies_ALL (bst_bypassed_en),1900
+HZ06-PSPEC2-308,Quiescent Current,I VBAT,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense on, AMP_FET_SCALE_MODE = 00b (FET scaling enabled), BST_BYP_MODE = 00b (boost bypass enabled), V VBAT  = 4.2V",,2.89,TBD,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1874,Quiescent Current,HZ06-MVPATE-1886,"IBAT_Quies_ALL(bst_bypassed_en, 4.2V)",1924
+HZ06-PSPEC2-309,Quiescent Current,I VBAT,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense off, AMP_FET_SCALE_MODE = 00b (FET scaling enabled), BST_BYP_MODE = 00b (boost bypass enabled)",,2.53,TBD,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1873,Quiescent Current,HZ06-MVPATE-1887,"IBAT(IVsense_off, bst_bypassed_en)",1906
+HZ06-PSPEC2-310,Quiescent Current,I VBAT,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense off, AMP_FET_SCALE_MODE = 00b (FET scaling enabled), BST_BYP_MODE = 00b (boost bypass enabled), V VBAT  = 4.2V",,2.81,TBD,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1872,Quiescent Current,HZ06-MVPATE-1888,"IBAT(IVsense_off, bst_bypassed_en, 4.2V)",1930
+HZ06-PSPEC2-311,Quiescent Current,I DVDD,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense on, AMP_FET_SCALE_MODE = 00b (FET scaling enabled), BST_BYP_MODE = 00b (boost bypass enabled)",,4.3,TBD,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1871,Quiescent Current,HZ06-MVPATE-1889,IDVDD_Quies_ALL(bst_bypassed_en),1904
+HZ06-PSPEC2-312,Quiescent Current,I DVDD,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense off, AMP_FET_SCALE_MODE = 00b (FET scaling enabled), BST_BYP_MODE = 00b (boost bypass enabled)",,2.5,TBD,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1870,Quiescent Current,HZ06-MVPATE-1890,"IDVDD(IVsense_off, bst_bypassed_en)",1910
+HZ06-PSPEC2-313,Quiescent Current,I VBAT,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense on, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 00b (boost bypass enabled)",,3.11,TBD,"IV - Not Production Tested, Characterized by ATE",No,HZ06-MVPHUB-1869,Quiescent Current,HZ06-MVPATE-1891,"IBAT_(FET_scaling_off, bst_bypassed_en)",1912
+HZ06-PSPEC2-314,Quiescent Current,I VBAT,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense on, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 00b (boost bypass enabled), V VBAT  = 4.2V",,3.32,TBD,"IV - Not Production Tested, Characterized by ATE",No,HZ06-MVPHUB-1868,Quiescent Current,HZ06-MVPATE-1892,"IBAT(FET_scaling_off, bst_bypassed_en, 4.2V)",1936
+HZ06-PSPEC2-315,Quiescent Current,I VBAT,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense off, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 00b (boost bypass enabled)",,3.02,TBD,"IV - Not Production Tested, Characterized by ATE",No,HZ06-MVPHUB-1867,Quiescent Current,HZ06-MVPATE-1893,"IBAT (IVsense_off, FET_scaling_off, boost_bypassed_en)",1918
+HZ06-PSPEC2-316,Quiescent Current,I VBAT,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense off, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 00b (boost bypass enabled), V VBAT  = 4.2V",,3.28,TBD,"IV - Not Production Tested, Characterized by ATE",No,HZ06-MVPHUB-1866,Quiescent Current,HZ06-MVPATE-1894,"IBAT( IVsense off, FET_scaling_off, boost_bypassed_en, 4.2V)",1942
+HZ06-PSPEC2-317,Quiescent Current,I DVDD,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense on, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 00b (boost bypass enabled)",,4.31,TBD,"IV - Not Production Tested, Characterized by ATE",No,HZ06-MVPHUB-1865,Quiescent Current,HZ06-MVPATE-1895,"IDVDD (FET_scaling_off, bst_bypassed_en)",1916
+HZ06-PSPEC2-318,Quiescent Current,I DVDD,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense off, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 00b (boost bypass enabled)",,2.5,TBD,"IV - Not Production Tested, Characterized by ATE",No,HZ06-MVPHUB-1864,Quiescent Current,HZ06-MVPATE-1896,"IDVDD (FET_scaling_off, bst_bypassed_en, 4.2V)",1940
+HZ06-PSPEC2-319,Quiescent Current,I VBAT,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense on, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 10b (boost bypass disabled)",,7.56,TBD,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1863,Quiescent Current,HZ06-MVPATE-1897,"IBAT(FET_scaling_off, bst_bypassed_doff)",1962
+HZ06-PSPEC2-320,Quiescent Current,I VBAT,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense on, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 10b (boost bypass disabled), V VBAT  = 4.2V",,6.65,TBD,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1862,Quiescent Current,HZ06-MVPATE-1898,"IBAT(FET_scaling_off, bst_bypassed_off, 4.2V)",1986
+HZ06-PSPEC2-321,Quiescent Current,I VBAT,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense off, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 10b (boost bypass disabled)",,7.38,TBD,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1861,Quiescent Current,HZ06-MVPATE-1899,"IBAT(IVsense_off, FET_scaling_off, bst_bypassed_off)",1968
+HZ06-PSPEC2-322,Quiescent Current,I VBAT,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense off, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 10b (boost bypass disabled), V VBAT  = 4.2V",,6.52,TBD,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1860,Quiescent Current,HZ06-MVPATE-1900,"IBAT(IVsense_off, FET_scaling_off, bst_bypassed_off, 4.2V)",1992
+HZ06-PSPEC2-323,Quiescent Current,I DVDD,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense on, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 10b (boost bypass disabled)",,4.35,TBD,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1859,Quiescent Current,HZ06-MVPATE-1901,"IDVDD(IVsense_on, FET scaling off, bst_bypassed_off)",1966
+HZ06-PSPEC2-324,Quiescent Current,I DVDD,"All circuit blocks active, I 2 S slave mode, clocking in zeros, valid clocks, T A  = 25°C, IV sense off, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 10b (boost bypass disabled)",,2.5,TBD,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1858,Quiescent Current,HZ06-MVPATE-1902,"IDVDD(IVsense_off, FET scaling off, bst_bypassed_off)",1972
+HZ06-PSPEC2-17,Software Shutdown Supply Current,I VBAT (SHDN_SW),"EN=0, no MCLK/BCLK/LRCLK/DIN transitions, T A  = 25°C",,0.4,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-943,BAT_Ishdn_sw,HZ06-MVPATE-943,BAT_Ishdn_sw,1715
+HZ06-PSPEC2-18,Software Shutdown Supply Current,I DVDD (SHDN_SW),"EN=0, no MCLK/BCLK/LRCLK/DIN transitions, T A  = 25°C",,10,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-944,DVDD_Ishdn_sw,HZ06-MVPATE-944,DVDD_Ishdn_sw,1725
+HZ06-PSPEC2-19,Hardware Shutdown Supply Current,I VBAT (SHDN_HW),"/RESET = 0, T  A   = +25°C",,0.35,1,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-947,BAT_Ishdn_hw,HZ06-MVPATE-947,BAT_Ishdn_hw,1700
+HZ06-PSPEC2-20,Hardware Shutdown Supply Current,I DVDD (SHDN_HW),"/RESET = 0, T A  = +25°C",,,1,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-945,DVDD_Ishdn_hw,HZ06-MVPATE-945,DVDD_Ishdn_hw,1710
+HZ06-PSPEC2-22,System Efficiency,η,"P OUT  = 1.2W, f = 1kHz, Z SPK  = 8Ω+33µH",,82,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-280,System Efficiency,η,"P OUT  = 1.2W, f = 1kHz, Z SPK  = 8Ω+33µH, V VBAT  = 4.3V, V PVDD  = 10V",,83,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-343,System Efficiency,η,"P OUT  = 1.2W, f = 1kHz, Z SPK  = 4Ω+33µH",,TBD,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-269,System Efficiency,η,"P OUT  = TBD W, f = 1kHz, Z SPK  = 8Ω+33µH, boost bypassed, 1/4 size output FETs",,TBD,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-24,Turn On Time,t ON,"Time from EN active to class-D amplifier on, SPK_SPEEDUP = 0, AMP_VOL_RMPUP_BYPASS = 0",,3.7,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1004,SPK_Turn_On_Time,HZ06-MVPATE-1004,SPK_Turn_On_Time,7025
+HZ06-PSPEC2-355,Turn On Time,t ON,"Time from EN active to class-D amplifier on, SPK_SPEEDUP = 1, AMP_VOL_RMPUP_BYPASS = 1",,1.35,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-356,Turn On Time,t ON,"Time from SPK_EN active to class-D amplifier on, SPK_SPEEDUP = 1, AMP_VOL_RMPUP_BYPASS = 1",,200,,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-266,Turn On Time,t ON,"Time from I2C programming to boost on, SPK_SPEEDUP = 0, BST_SLOWSTART = 0",,1.2,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-267,Turn On Time,t ON,"Time from I2C programming to boost on, SPK_SPEEDUP = 0, BST_SLOWSTART = 1",,12.2,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-268,Turn On Time,t ON,"Time from boost on to audio out, SPK_SPEEDUP = 0",,3.15,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-25,Soft Start Time,t STR,  ,,1.4,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-806,BST soft start Timer,HZ06-MVPATE-806,BST soft start Timer,2615
+,,,,,,,,,HZ06-MVPHUB-1930,BST_SSCLK_Freq,HZ06-MVPATE-1963,BST_SSCLK_Freq,4015
+HZ06-PSPEC2-26,LX leakage current,I LX_LEAK,"T A  = 25°C, LX from 0V to 4.5V",-1,0,1,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-639,IH_LX,HZ06-MVPATE-639,IH_LX,505
+,,,,,,,,,HZ06-MVPHUB-622,IL_LX,HZ06-MVPATE-622,IL_LX,420
+HZ06-PSPEC2-27,Startup Input Current Limit,I STARTUP,,,0.5,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-28,Minimum Peak Input Current Limit,I LX_MIN,At minimum programmed setting,,1,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-837,BST_Ix0_GNG,HZ06-MVPATE-837,BST_Ix0_GNG,3300
+,,,,,,,,,HZ06-MVPHUB-838,BST_Ix1_GNG,HZ06-MVPATE-838,BST_Ix1_GNG,3310
+,,,,,,,,,HZ06-MVPHUB-839,BST_Ix2_GNG,HZ06-MVPATE-839,BST_Ix2_GNG,3320
+,,,,,,,,,HZ06-MVPHUB-852,BST_Ix3F_GNG,HZ06-MVPATE-852,BST_Ix3F_GNG,3930
+,,,,,,,,,HZ06-MVPHUB-840,BST_Ix3_GNG,HZ06-MVPATE-840,BST_Ix3_GNG,3330
+,,,,,,,,,HZ06-MVPHUB-841,BST_Ix4_GNG,HZ06-MVPATE-841,BST_Ix4_GNG,3340
+,,,,,,,,,HZ06-MVPHUB-842,BST_Ix5_GNG,HZ06-MVPATE-842,BST_Ix5_GNG,3350
+,,,,,,,,,HZ06-MVPHUB-843,BST_Ix6_GNG,HZ06-MVPATE-843,BST_Ix6_GNG,3360
+,,,,,,,,,HZ06-MVPHUB-844,BST_Ix7_GNG,HZ06-MVPATE-844,BST_Ix7_GNG,3370
+,,,,,,,,,HZ06-MVPHUB-845,BST_Ix8_GNG,HZ06-MVPATE-845,BST_Ix8_GNG,3380
+,,,,,,,,,HZ06-MVPHUB-846,BST_Ix9_GNG,HZ06-MVPATE-846,BST_Ix9_GNG,3390
+,,,,,,,,,HZ06-MVPHUB-847,BST_IxA_GNG,HZ06-MVPATE-847,BST_IxA_GNG,3400
+,,,,,,,,,HZ06-MVPHUB-848,BST_IxB_GNG,HZ06-MVPATE-848,BST_IxB_GNG,3410
+,,,,,,,,,HZ06-MVPHUB-849,BST_IxC_GNG,HZ06-MVPATE-849,BST_IxC_GNG,3420
+,,,,,,,,,HZ06-MVPHUB-850,BST_IxD_GNG,HZ06-MVPATE-850,BST_IxD_GNG,3430
+,,,,,,,,,HZ06-MVPHUB-851,BST_IxE_GNG,HZ06-MVPATE-851,BST_IxE_GNG,3440
+HZ06-PSPEC2-29,Maximum Peak Input Current Limit,I LX_MAX,"Maximum usable programmed limit, 2.65V ≤ V VBAT   ≤ 2.85V",,2.8,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-30,Maximum Peak Input Current Limit,I LX_MAX,"Maximum usable programmed limit, 2.85V < V VBAT  ≤ 5.5V",,4.1,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-837,BST_Ix0_GNG,HZ06-MVPATE-837,BST_Ix0_GNG,3300
+,,,,,,,,,HZ06-MVPHUB-838,BST_Ix1_GNG,HZ06-MVPATE-838,BST_Ix1_GNG,3310
+,,,,,,,,,HZ06-MVPHUB-839,BST_Ix2_GNG,HZ06-MVPATE-839,BST_Ix2_GNG,3320
+,,,,,,,,,HZ06-MVPHUB-852,BST_Ix3F_GNG,HZ06-MVPATE-852,BST_Ix3F_GNG,3930
+,,,,,,,,,HZ06-MVPHUB-840,BST_Ix3_GNG,HZ06-MVPATE-840,BST_Ix3_GNG,3330
+,,,,,,,,,HZ06-MVPHUB-841,BST_Ix4_GNG,HZ06-MVPATE-841,BST_Ix4_GNG,3340
+,,,,,,,,,HZ06-MVPHUB-842,BST_Ix5_GNG,HZ06-MVPATE-842,BST_Ix5_GNG,3350
+,,,,,,,,,HZ06-MVPHUB-843,BST_Ix6_GNG,HZ06-MVPATE-843,BST_Ix6_GNG,3360
+,,,,,,,,,HZ06-MVPHUB-844,BST_Ix7_GNG,HZ06-MVPATE-844,BST_Ix7_GNG,3370
+,,,,,,,,,HZ06-MVPHUB-845,BST_Ix8_GNG,HZ06-MVPATE-845,BST_Ix8_GNG,3380
+,,,,,,,,,HZ06-MVPHUB-846,BST_Ix9_GNG,HZ06-MVPATE-846,BST_Ix9_GNG,3390
+,,,,,,,,,HZ06-MVPHUB-847,BST_IxA_GNG,HZ06-MVPATE-847,BST_IxA_GNG,3400
+,,,,,,,,,HZ06-MVPHUB-848,BST_IxB_GNG,HZ06-MVPATE-848,BST_IxB_GNG,3410
+,,,,,,,,,HZ06-MVPHUB-849,BST_IxC_GNG,HZ06-MVPATE-849,BST_IxC_GNG,3420
+,,,,,,,,,HZ06-MVPHUB-850,BST_IxD_GNG,HZ06-MVPATE-850,BST_IxD_GNG,3430
+,,,,,,,,,HZ06-MVPHUB-851,BST_IxE_GNG,HZ06-MVPATE-851,BST_IxE_GNG,3440
+HZ06-PSPEC2-31,Input Current Limit Step,,(TODO: Internal spec for Apollo version),,50,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-306,Input Current Limit Step,,,,100,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-332,Input Current Limit Accuracy,,"T A  = 25°C, tested at V VBAT  = 2.65V, 3.7V, and 5.5V, each V VBAT  level tested at BST_ILIM = minimum and maximum, 1.00A ≤ BST_ILIM ≤ 2.00A",-9,,11,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-333,Input Current Limit Accuracy,,"T A  = 25°C, tested at V VBAT  = 2.65V, 3.7V, and 5.5V, each V VBAT  level tested at BST_ILIM = minimum and maximum, 2.05A ≤ BST_ILIM ≤ 4.10A",-8,,9,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-33,Switching Frequency,f SW,"Speaker driving signal or skip mode disabled, Fast mode",,3.7,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-804,BST StepUp freq ,HZ06-MVPATE-804,BST StepUp freq ,4000
+HZ06-PSPEC2-251,Switching Frequency,f SW,"Speaker driving signal or skip mode disabled, Slow mode",,2.3,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1817,Slow_Mode_sw_freq,HZ06-MVPATE-1847,Switching Frequency,7030 7035
+HZ06-PSPEC2-34,Skip Mode Frequency,f SW-SKIP,"Quiescent speaker and skip mode enabled, Mode 1",,51,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-35,Skip Mode Frequency,f SW-SKIP,"Quiescent speaker and skip mode enabled, Mode 2",,52,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-36,Skip Mode Frequency,f SW-SKIP,"Quiescent speaker and skip mode enabled, Mode 3",,338,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-37,Efficiency,η BOOST,I OUT =0.4A ,,92,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-270,Boost Clock Phase,Φ BOOST,"Relative to LRCLK, BST_PHASE=000",,3,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-271,Boost Clock Phase,Φ BOOST,"Relative to LRCLK, BST_PHASE=001",,71,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-272,Boost Clock Phase,Φ BOOST,"Relative to LRCLK, BST_PHASE=010",,140,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-273,Boost Clock Phase,Φ BOOST,"Relative to LRCLK, BST_PHASE=011",,208,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-40,Output Voltage,V PVDD,"Max setting, across specified V VBAT  operating range, boost on (not bypassed)",,10,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-879,*BST_0x1A_Vout_Max,HZ06-MVPATE-879,*BST_0x1A_Vout,3266
+,,,,,,,,,HZ06-MVPHUB-810,BST_Vx00_GNG,HZ06-MVPATE-810,BST_Vx00_GNG,3000
+,,,,,,,,,HZ06-MVPHUB-811,BST_Vx01_GNG,HZ06-MVPATE-811,BST_Vx01_GNG,3010
+,,,,,,,,,HZ06-MVPHUB-812,BST_Vx02_GNG,HZ06-MVPATE-812,BST_Vx02_GNG,3020
+,,,,,,,,,HZ06-MVPHUB-813,BST_Vx03_GNG,HZ06-MVPATE-813,BST_Vx03_GNG,3030
+,,,,,,,,,HZ06-MVPHUB-814,BST_Vx04_GNG,HZ06-MVPATE-814,BST_Vx04_GNG,3040
+,,,,,,,,,HZ06-MVPHUB-815,BST_Vx05_GNG,HZ06-MVPATE-815,BST_Vx05_GNG,3050
+,,,,,,,,,HZ06-MVPHUB-816,BST_Vx06_GNG,HZ06-MVPATE-816,BST_Vx06_GNG,3060
+,,,,,,,,,HZ06-MVPHUB-817,BST_Vx07_GNG,HZ06-MVPATE-817,BST_Vx07_GNG,3070
+,,,,,,,,,HZ06-MVPHUB-818,BST_Vx08_GNG,HZ06-MVPATE-818,BST_Vx08_GNG,3080
+,,,,,,,,,HZ06-MVPHUB-819,BST_Vx09_GNG,HZ06-MVPATE-819,BST_Vx09_GNG,3090
+,,,,,,,,,HZ06-MVPHUB-820,BST_Vx0A_GNG,HZ06-MVPATE-820,BST_Vx0A_GNG,3100
+,,,,,,,,,HZ06-MVPHUB-821,BST_Vx0B_GNG,HZ06-MVPATE-821,BST_Vx0B_GNG,3110
+,,,,,,,,,HZ06-MVPHUB-822,BST_Vx0C_GNG,HZ06-MVPATE-822,BST_Vx0C_GNG,3120
+,,,,,,,,,HZ06-MVPHUB-823,BST_Vx0D_GNG,HZ06-MVPATE-823,BST_Vx0D_GNG,3130
+,,,,,,,,,HZ06-MVPHUB-824,BST_Vx0E_GNG,HZ06-MVPATE-824,BST_Vx0E_GNG,3140
+,,,,,,,,,HZ06-MVPHUB-825,BST_Vx0F_GNG,HZ06-MVPATE-825,BST_Vx0F_GNG,3150
+,,,,,,,,,HZ06-MVPHUB-826,BST_Vx10_GNG,HZ06-MVPATE-826,BST_Vx10_GNG,3160
+,,,,,,,,,HZ06-MVPHUB-827,BST_Vx11_GNG,HZ06-MVPATE-827,BST_Vx11_GNG,3170
+,,,,,,,,,HZ06-MVPHUB-828,BST_Vx12_GNG,HZ06-MVPATE-828,BST_Vx12_GNG,3180
+,,,,,,,,,HZ06-MVPHUB-829,BST_Vx13_GNG,HZ06-MVPATE-829,BST_Vx13_GNG,3190
+,,,,,,,,,HZ06-MVPHUB-830,BST_Vx14_GNG,HZ06-MVPATE-830,BST_Vx14_GNG,3200
+,,,,,,,,,HZ06-MVPHUB-831,BST_Vx15_GNG,HZ06-MVPATE-831,BST_Vx15_GNG,3210
+,,,,,,,,,HZ06-MVPHUB-832,BST_Vx16_GNG,HZ06-MVPATE-832,BST_Vx16_GNG,3220
+,,,,,,,,,HZ06-MVPHUB-833,BST_Vx17_GNG,HZ06-MVPATE-833,BST_Vx17_GNG,3230
+,,,,,,,,,HZ06-MVPHUB-834,BST_Vx18_GNG,HZ06-MVPATE-834,BST_Vx18_GNG,3240
+,,,,,,,,,HZ06-MVPHUB-835,BST_Vx19_GNG,HZ06-MVPATE-835,BST_Vx19_GNG,3250
+,,,,,,,,,HZ06-MVPHUB-836,BST_Vx1A_GNG,HZ06-MVPATE-836,BST_Vx1A_GNG,3260
+HZ06-PSPEC2-41,Output Voltage,V PVDD,"Min setting, across specified V VBAT  operating range, boost on (not bypassed)",,6.5,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-880,*BST_0x00_Vout%,HZ06-MVPATE-880,*BST_0x00_Vout%,3007
+,,,,,,,,,HZ06-MVPHUB-853,*BST_0x00_Vout_Min,HZ06-MVPATE-853,*BST_0x00_Vout,3006
+,,,,,,,,,HZ06-MVPHUB-881,*BST_0x01_Vout%,HZ06-MVPATE-881,*BST_0x01_Vout%,3017
+,,,,,,,,,HZ06-MVPHUB-882,*BST_0x02_Vout%,HZ06-MVPATE-882,*BST_0x02_Vout%,3027
+,,,,,,,,,HZ06-MVPHUB-883,*BST_0x03_Vout%,HZ06-MVPATE-883,*BST_0x03_Vout%,3037
+,,,,,,,,,HZ06-MVPHUB-884,*BST_0x04_Vout%,HZ06-MVPATE-884,*BST_0x04_Vout%,3047
+,,,,,,,,,HZ06-MVPHUB-885,*BST_0x05_Vout%,HZ06-MVPATE-885,*BST_0x05_Vout%,3057
+,,,,,,,,,HZ06-MVPHUB-886,*BST_0x06_Vout%,HZ06-MVPATE-886,*BST_0x06_Vout%,3067
+,,,,,,,,,HZ06-MVPHUB-887,*BST_0x07_Vout%,HZ06-MVPATE-887,*BST_0x07_Vout%,3077
+,,,,,,,,,HZ06-MVPHUB-888,*BST_0x08_Vout%,HZ06-MVPATE-888,*BST_0x08_Vout%,3087
+,,,,,,,,,HZ06-MVPHUB-889,*BST_0x09_Vout%,HZ06-MVPATE-889,*BST_0x09_Vout%,3097
+,,,,,,,,,HZ06-MVPHUB-890,*BST_0x0A_Vout%,HZ06-MVPATE-890,*BST_0x0A_Vout%,3107
+,,,,,,,,,HZ06-MVPHUB-891,*BST_0x0B_Vout%,HZ06-MVPATE-891,*BST_0x0B_Vout%,3117
+,,,,,,,,,HZ06-MVPHUB-892,*BST_0x0C_Vout%,HZ06-MVPATE-892,*BST_0x0C_Vout%,3127
+,,,,,,,,,HZ06-MVPHUB-893,*BST_0x0D_Vout%,HZ06-MVPATE-893,*BST_0x0D_Vout%,3137
+,,,,,,,,,HZ06-MVPHUB-894,*BST_0x0E_Vout%,HZ06-MVPATE-894,*BST_0x0E_Vout%,3147
+,,,,,,,,,HZ06-MVPHUB-895,*BST_0x0F_Vout%,HZ06-MVPATE-895,*BST_0x0F_Vout%,3157
+,,,,,,,,,HZ06-MVPHUB-896,*BST_0x10_Vout%,HZ06-MVPATE-896,*BST_0x10_Vout%,3167
+,,,,,,,,,HZ06-MVPHUB-897,*BST_0x11_Vout%,HZ06-MVPATE-897,*BST_0x11_Vout%,3177
+,,,,,,,,,HZ06-MVPHUB-898,*BST_0x12_Vout%,HZ06-MVPATE-898,*BST_0x12_Vout%,10425
+,,,,,,,,,HZ06-MVPHUB-899,*BST_0x13_Vout%,HZ06-MVPATE-899,*BST_0x13_Vout%,3197
+,,,,,,,,,HZ06-MVPHUB-900,*BST_0x14_Vout%,HZ06-MVPATE-900,*BST_0x14_Vout%,3207
+,,,,,,,,,HZ06-MVPHUB-901,*BST_0x15_Vout%,HZ06-MVPATE-901,*BST_0x15_Vout%,3217
+,,,,,,,,,HZ06-MVPHUB-902,*BST_0x16_Vout%,HZ06-MVPATE-902,*BST_0x16_Vout%,3227
+,,,,,,,,,HZ06-MVPHUB-810,BST_Vx00_GNG,HZ06-MVPATE-810,BST_Vx00_GNG,3000
+,,,,,,,,,HZ06-MVPHUB-811,BST_Vx01_GNG,HZ06-MVPATE-811,BST_Vx01_GNG,3010
+,,,,,,,,,HZ06-MVPHUB-812,BST_Vx02_GNG,HZ06-MVPATE-812,BST_Vx02_GNG,3020
+,,,,,,,,,HZ06-MVPHUB-813,BST_Vx03_GNG,HZ06-MVPATE-813,BST_Vx03_GNG,3030
+,,,,,,,,,HZ06-MVPHUB-814,BST_Vx04_GNG,HZ06-MVPATE-814,BST_Vx04_GNG,3040
+,,,,,,,,,HZ06-MVPHUB-815,BST_Vx05_GNG,HZ06-MVPATE-815,BST_Vx05_GNG,3050
+,,,,,,,,,HZ06-MVPHUB-816,BST_Vx06_GNG,HZ06-MVPATE-816,BST_Vx06_GNG,3060
+,,,,,,,,,HZ06-MVPHUB-817,BST_Vx07_GNG,HZ06-MVPATE-817,BST_Vx07_GNG,3070
+,,,,,,,,,HZ06-MVPHUB-818,BST_Vx08_GNG,HZ06-MVPATE-818,BST_Vx08_GNG,3080
+,,,,,,,,,HZ06-MVPHUB-819,BST_Vx09_GNG,HZ06-MVPATE-819,BST_Vx09_GNG,3090
+,,,,,,,,,HZ06-MVPHUB-820,BST_Vx0A_GNG,HZ06-MVPATE-820,BST_Vx0A_GNG,3100
+,,,,,,,,,HZ06-MVPHUB-821,BST_Vx0B_GNG,HZ06-MVPATE-821,BST_Vx0B_GNG,3110
+,,,,,,,,,HZ06-MVPHUB-822,BST_Vx0C_GNG,HZ06-MVPATE-822,BST_Vx0C_GNG,3120
+,,,,,,,,,HZ06-MVPHUB-823,BST_Vx0D_GNG,HZ06-MVPATE-823,BST_Vx0D_GNG,3130
+,,,,,,,,,HZ06-MVPHUB-824,BST_Vx0E_GNG,HZ06-MVPATE-824,BST_Vx0E_GNG,3140
+,,,,,,,,,HZ06-MVPHUB-825,BST_Vx0F_GNG,HZ06-MVPATE-825,BST_Vx0F_GNG,3150
+,,,,,,,,,HZ06-MVPHUB-826,BST_Vx10_GNG,HZ06-MVPATE-826,BST_Vx10_GNG,3160
+,,,,,,,,,HZ06-MVPHUB-827,BST_Vx11_GNG,HZ06-MVPATE-827,BST_Vx11_GNG,3170
+,,,,,,,,,HZ06-MVPHUB-828,BST_Vx12_GNG,HZ06-MVPATE-828,BST_Vx12_GNG,3180
+,,,,,,,,,HZ06-MVPHUB-829,BST_Vx13_GNG,HZ06-MVPATE-829,BST_Vx13_GNG,3190
+,,,,,,,,,HZ06-MVPHUB-830,BST_Vx14_GNG,HZ06-MVPATE-830,BST_Vx14_GNG,3200
+,,,,,,,,,HZ06-MVPHUB-831,BST_Vx15_GNG,HZ06-MVPATE-831,BST_Vx15_GNG,3210
+,,,,,,,,,HZ06-MVPHUB-832,BST_Vx16_GNG,HZ06-MVPATE-832,BST_Vx16_GNG,3220
+,,,,,,,,,HZ06-MVPHUB-833,BST_Vx17_GNG,HZ06-MVPATE-833,BST_Vx17_GNG,3230
+,,,,,,,,,HZ06-MVPHUB-834,BST_Vx18_GNG,HZ06-MVPATE-834,BST_Vx18_GNG,3240
+,,,,,,,,,HZ06-MVPHUB-835,BST_Vx19_GNG,HZ06-MVPATE-835,BST_Vx19_GNG,3250
+,,,,,,,,,HZ06-MVPHUB-836,BST_Vx1A_GNG,HZ06-MVPATE-836,BST_Vx1A_GNG,3260
+HZ06-PSPEC2-42,Output Voltage Step Size,,,,0.125,,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-880,*BST_0x00_Vout%,HZ06-MVPATE-880,*BST_0x00_Vout%,3007
+,,,,,,,,,HZ06-MVPHUB-853,*BST_0x00_Vout_Min,HZ06-MVPATE-853,*BST_0x00_Vout,3006
+,,,,,,,,,HZ06-MVPHUB-854,*BST_0x01_Vout,HZ06-MVPATE-854,*BST_0x01_Vout,3016
+,,,,,,,,,HZ06-MVPHUB-881,*BST_0x01_Vout%,HZ06-MVPATE-881,*BST_0x01_Vout%,3017
+,,,,,,,,,HZ06-MVPHUB-855,*BST_0x02_Vout,HZ06-MVPATE-855,*BST_0x02_Vout,3026
+,,,,,,,,,HZ06-MVPHUB-882,*BST_0x02_Vout%,HZ06-MVPATE-882,*BST_0x02_Vout%,3027
+,,,,,,,,,HZ06-MVPHUB-856,*BST_0x03_Vout,HZ06-MVPATE-856,*BST_0x03_Vout,3036
+,,,,,,,,,HZ06-MVPHUB-883,*BST_0x03_Vout%,HZ06-MVPATE-883,*BST_0x03_Vout%,3037
+,,,,,,,,,HZ06-MVPHUB-857,*BST_0x04_Vout,HZ06-MVPATE-857,*BST_0x04_Vout,3046
+,,,,,,,,,HZ06-MVPHUB-884,*BST_0x04_Vout%,HZ06-MVPATE-884,*BST_0x04_Vout%,3047
+,,,,,,,,,HZ06-MVPHUB-858,*BST_0x05_Vout,HZ06-MVPATE-858,*BST_0x05_Vout,3056
+,,,,,,,,,HZ06-MVPHUB-885,*BST_0x05_Vout%,HZ06-MVPATE-885,*BST_0x05_Vout%,3057
+,,,,,,,,,HZ06-MVPHUB-859,*BST_0x06_Vout,HZ06-MVPATE-859,*BST_0x06_Vout,3066
+,,,,,,,,,HZ06-MVPHUB-886,*BST_0x06_Vout%,HZ06-MVPATE-886,*BST_0x06_Vout%,3067
+,,,,,,,,,HZ06-MVPHUB-860,*BST_0x07_Vout,HZ06-MVPATE-860,*BST_0x07_Vout,3076
+,,,,,,,,,HZ06-MVPHUB-887,*BST_0x07_Vout%,HZ06-MVPATE-887,*BST_0x07_Vout%,3077
+,,,,,,,,,HZ06-MVPHUB-861,*BST_0x08_Vout,HZ06-MVPATE-861,*BST_0x08_Vout,3086
+,,,,,,,,,HZ06-MVPHUB-888,*BST_0x08_Vout%,HZ06-MVPATE-888,*BST_0x08_Vout%,3087
+,,,,,,,,,HZ06-MVPHUB-862,*BST_0x09_Vout,HZ06-MVPATE-862,*BST_0x09_Vout,3096
+,,,,,,,,,HZ06-MVPHUB-889,*BST_0x09_Vout%,HZ06-MVPATE-889,*BST_0x09_Vout%,3097
+,,,,,,,,,HZ06-MVPHUB-863,*BST_0x0A_Vout,HZ06-MVPATE-863,*BST_0x0A_Vout,3106
+,,,,,,,,,HZ06-MVPHUB-890,*BST_0x0A_Vout%,HZ06-MVPATE-890,*BST_0x0A_Vout%,3107
+,,,,,,,,,HZ06-MVPHUB-864,*BST_0x0B_Vout,HZ06-MVPATE-864,*BST_0x0B_Vout,3116
+,,,,,,,,,HZ06-MVPHUB-891,*BST_0x0B_Vout%,HZ06-MVPATE-891,*BST_0x0B_Vout%,3117
+,,,,,,,,,HZ06-MVPHUB-865,*BST_0x0C_Vout,HZ06-MVPATE-865,*BST_0x0C_Vout,3126
+,,,,,,,,,HZ06-MVPHUB-892,*BST_0x0C_Vout%,HZ06-MVPATE-892,*BST_0x0C_Vout%,3127
+,,,,,,,,,HZ06-MVPHUB-866,*BST_0x0D_Vout,HZ06-MVPATE-866,*BST_0x0D_Vout,3136
+,,,,,,,,,HZ06-MVPHUB-893,*BST_0x0D_Vout%,HZ06-MVPATE-893,*BST_0x0D_Vout%,3137
+,,,,,,,,,HZ06-MVPHUB-867,*BST_0x0E_Vout,HZ06-MVPATE-867,*BST_0x0E_Vout,3146
+,,,,,,,,,HZ06-MVPHUB-894,*BST_0x0E_Vout%,HZ06-MVPATE-894,*BST_0x0E_Vout%,3147
+,,,,,,,,,HZ06-MVPHUB-868,*BST_0x0F_Vout,HZ06-MVPATE-868,*BST_0x0F_Vout,3156
+,,,,,,,,,HZ06-MVPHUB-895,*BST_0x0F_Vout%,HZ06-MVPATE-895,*BST_0x0F_Vout%,3157
+,,,,,,,,,HZ06-MVPHUB-869,*BST_0x10_Vout,HZ06-MVPATE-869,*BST_0x10_Vout,3166
+,,,,,,,,,HZ06-MVPHUB-896,*BST_0x10_Vout%,HZ06-MVPATE-896,*BST_0x10_Vout%,3167
+,,,,,,,,,HZ06-MVPHUB-870,*BST_0x11_Vout,HZ06-MVPATE-870,*BST_0x11_Vout,3176
+,,,,,,,,,HZ06-MVPHUB-897,*BST_0x11_Vout%,HZ06-MVPATE-897,*BST_0x11_Vout%,3177
+,,,,,,,,,HZ06-MVPHUB-871,*BST_0x12_Vout,HZ06-MVPATE-871,*BST_0x12_Vout,3186
+,,,,,,,,,HZ06-MVPHUB-898,*BST_0x12_Vout%,HZ06-MVPATE-898,*BST_0x12_Vout%,10425
+,,,,,,,,,HZ06-MVPHUB-872,*BST_0x13_Vout,HZ06-MVPATE-872,*BST_0x13_Vout,3196
+,,,,,,,,,HZ06-MVPHUB-899,*BST_0x13_Vout%,HZ06-MVPATE-899,*BST_0x13_Vout%,3197
+,,,,,,,,,HZ06-MVPHUB-873,*BST_0x14_Vout,HZ06-MVPATE-873,*BST_0x14_Vout,3206
+,,,,,,,,,HZ06-MVPHUB-900,*BST_0x14_Vout%,HZ06-MVPATE-900,*BST_0x14_Vout%,3207
+,,,,,,,,,HZ06-MVPHUB-874,*BST_0x15_Vout,HZ06-MVPATE-874,*BST_0x15_Vout,3216
+,,,,,,,,,HZ06-MVPHUB-901,*BST_0x15_Vout%,HZ06-MVPATE-901,*BST_0x15_Vout%,3217
+,,,,,,,,,HZ06-MVPHUB-875,*BST_0x16_Vout,HZ06-MVPATE-875,*BST_0x16_Vout,3226
+,,,,,,,,,HZ06-MVPHUB-902,*BST_0x16_Vout%,HZ06-MVPATE-902,*BST_0x16_Vout%,3227
+,,,,,,,,,HZ06-MVPHUB-876,*BST_0x17_Vout,HZ06-MVPATE-876,*BST_0x17_Vout,3236
+,,,,,,,,,HZ06-MVPHUB-903,*BST_0x17_Vout%,HZ06-MVPATE-903,*BST_0x17_Vout%,3237
+,,,,,,,,,HZ06-MVPHUB-877,*BST_0x18_Vout,HZ06-MVPATE-877,*BST_0x18_Vout,3246
+,,,,,,,,,HZ06-MVPHUB-904,*BST_0x18_Vout%,HZ06-MVPATE-904,*BST_0x18_Vout%,3247
+,,,,,,,,,HZ06-MVPHUB-878,*BST_0x19_Vout,HZ06-MVPATE-878,*BST_0x19_Vout,3256
+,,,,,,,,,HZ06-MVPHUB-905,*BST_0x19_Vout%,HZ06-MVPATE-905,*BST_0x19_Vout%,3257
+,,,,,,,,,HZ06-MVPHUB-906,*BST_0x1A_Vout%,HZ06-MVPATE-906,*BST_0x1A_Vout%,3267
+,,,,,,,,,HZ06-MVPHUB-879,*BST_0x1A_Vout_Max,HZ06-MVPATE-879,*BST_0x1A_Vout,3266
+,,,,,,,,,HZ06-MVPHUB-1818,BST_0x00_0x01 step size,HZ06-MVPATE-1848,BST_0x00_0x01 step size,
+,,,,,,,,,HZ06-MVPHUB-1819,BST_0x01_0x02 step size,HZ06-MVPATE-1849,BST_0x01_0x02 step size,
+,,,,,,,,,HZ06-MVPHUB-1820,BST_0x02_0x03 step size,HZ06-MVPATE-1850,BST_0x02_0x03 step size,
+,,,,,,,,,HZ06-MVPHUB-1821,BST_0x03_0x04 step size,HZ06-MVPATE-1851,BST_0x03_0x04 step size,
+,,,,,,,,,HZ06-MVPHUB-1822,BST_0x04_0x05 step size,HZ06-MVPATE-1852,BST_0x04_0x05 step size,
+,,,,,,,,,HZ06-MVPHUB-1823,BST_0x05_0x06 step size,HZ06-MVPATE-1853,BST_0x05_0x06 step size,
+,,,,,,,,,HZ06-MVPHUB-1824,BST_0x06_0x07 step size,HZ06-MVPATE-1854,BST_0x06_0x07 step size,
+,,,,,,,,,HZ06-MVPHUB-1825,BST_0x07_0x08 step size,HZ06-MVPATE-1855,BST_0x07_0x08 step size,
+,,,,,,,,,HZ06-MVPHUB-1826,BST_0x08_0x09 step size,HZ06-MVPATE-1856,BST_0x08_0x09 step size,
+,,,,,,,,,HZ06-MVPHUB-1827,BST_0x09_0x0A step size,HZ06-MVPATE-1857,BST_0x09_0x0A step size,
+,,,,,,,,,HZ06-MVPHUB-1828,BST_0x0A_0x0B step size,HZ06-MVPATE-1858,BST_0x0A_0x0B step size,
+,,,,,,,,,HZ06-MVPHUB-1829,BST_0x0B_0x0C step size,HZ06-MVPATE-1859,BST_0x0B_0x0C step size,
+,,,,,,,,,HZ06-MVPHUB-1830,BST_0x0C_0x0D step size,HZ06-MVPATE-1860,BST_0x0C_0x0D step size,
+,,,,,,,,,HZ06-MVPHUB-1831,BST_0x0D_0x0E step size,HZ06-MVPATE-1861,BST_0x0D_0x0E step size,
+,,,,,,,,,HZ06-MVPHUB-1832,BST_0x0E_0x0F step size,HZ06-MVPATE-1862,BST_0x0E_0x0F step size,
+,,,,,,,,,HZ06-MVPHUB-1833,BST_0x0F_0x10 step size,HZ06-MVPATE-1863,BST_0x0F_0x10 step size,
+,,,,,,,,,HZ06-MVPHUB-1834,BST_0x10_0x11 step size,HZ06-MVPATE-1864,BST_0x10_0x11 step size,
+,,,,,,,,,HZ06-MVPHUB-1835,BST_0x11_0x12 step size,HZ06-MVPATE-1865,BST_0x11_0x12 step size,
+,,,,,,,,,HZ06-MVPHUB-1836,BST_0x12_0x13 step size,HZ06-MVPATE-1866,BST_0x12_0x13 step size,
+,,,,,,,,,HZ06-MVPHUB-1837,BST_0x13_0x14 step size,HZ06-MVPATE-1867,BST_0x13_0x14 step size,
+,,,,,,,,,HZ06-MVPHUB-1838,BST_0x14_0x15 step size,HZ06-MVPATE-1868,BST_0x14_0x15 step size,
+,,,,,,,,,HZ06-MVPHUB-1839,BST_0x15_0x16 step size,HZ06-MVPATE-1869,BST_0x15_0x16 step size,
+,,,,,,,,,HZ06-MVPHUB-1840,BST_0x16_0x17 step size,HZ06-MVPATE-1870,BST_0x16_0x17 step size,
+,,,,,,,,,HZ06-MVPHUB-1841,BST_0x17_0x18 step size,HZ06-MVPATE-1871,BST_0x17_0x18 step size,
+,,,,,,,,,HZ06-MVPHUB-1842,BST_0x18_0x19 step size,HZ06-MVPATE-1872,BST_0x18_0x19 step size,
+,,,,,,,,,HZ06-MVPHUB-1843,BST_0x19_0x1A step size,HZ06-MVPATE-1873,BST_0x19_0x1A step size,
+HZ06-PSPEC2-334,Absolute Output Voltage Accuracy,,"ENV_TRACKER_EN = 0, V VBAT  = 3.5V and 4.5V, any output voltage setting, relative to nominal (characterization data)",-3,,3,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,HZ06-MVPHUB-853,*BST_0x00_Vout_Min,HZ06-MVPATE-853,*BST_0x00_Vout,3006
+,,,,,,,,,HZ06-MVPHUB-879,*BST_0x1A_Vout_Max,HZ06-MVPATE-879,*BST_0x1A_Vout,3266
+,,,,,,,,,HZ06-MVPHUB-810,BST_Vx00_GNG,HZ06-MVPATE-810,BST_Vx00_GNG,3000
+,,,,,,,,,HZ06-MVPHUB-836,BST_Vx1A_GNG,HZ06-MVPATE-836,BST_Vx1A_GNG,3260
+HZ06-PSPEC2-335,Absolute Output Voltage Accuracy,,"ENV_TRACKER_EN = 0, V VBAT  = 3.5V and 4.5V, BST_VOUT set to 6.5V, 8.5V, and 10V, relative to nominal (production tested)",-3,,3,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-880,*BST_0x00_Vout%,HZ06-MVPATE-880,*BST_0x00_Vout%,3007
+,,,,,,,,,HZ06-MVPHUB-853,*BST_0x00_Vout_Min,HZ06-MVPATE-853,*BST_0x00_Vout,3006
+,,,,,,,,,HZ06-MVPHUB-862,*BST_0x09_Vout,HZ06-MVPATE-862,*BST_0x09_Vout,3096
+,,,,,,,,,HZ06-MVPHUB-889,*BST_0x09_Vout%,HZ06-MVPATE-889,*BST_0x09_Vout%,3097
+,,,,,,,,,HZ06-MVPHUB-906,*BST_0x1A_Vout%,HZ06-MVPATE-906,*BST_0x1A_Vout%,3267
+,,,,,,,,,HZ06-MVPHUB-879,*BST_0x1A_Vout_Max,HZ06-MVPATE-879,*BST_0x1A_Vout,3266
+,,,,,,,,,HZ06-MVPHUB-810,BST_Vx00_GNG,HZ06-MVPATE-810,BST_Vx00_GNG,3000
+,,,,,,,,,HZ06-MVPHUB-836,BST_Vx1A_GNG,HZ06-MVPATE-836,BST_Vx1A_GNG,3260
+HZ06-PSPEC2-336,Relative Output Voltage Accuracy,,"ENV_TRACKER_EN = 0, V VBAT  = 3.5V to 4.5V, relative to V PVDD  at V VBAT  = 3.7V, any output voltage setting",,±1,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-45,Boost Load Regulation,,0mA ≤ I LOAD  ≤ 1100mA. DC,,-3,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-46,Over Voltage Protection,OVP,,,10.5,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-942,BST_ABOVE_PVDD_falling,HZ06-MVPATE-942,BST_ABOVE_PVDD_falling,17700 17705
+,,,,,,,,,HZ06-MVPHUB-941,BST_ABOVE_PVDD_rising,HZ06-MVPATE-941,BST_ABOVE_PVDD_rising,17710 17715
+HZ06-PSPEC2-47,Gain Error,,,,1,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-48,Full Scale Output Voltage,,,,2.16,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-281,Valid Sample Rates,,,8,,48,VI - Internal Design Target,No,,,,,
+HZ06-PSPEC2-282,Passband,f PLP,Ripple < δ P,0.46f S,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",No,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-283,Passband,,Droop < 3dB,0.47f S,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",No,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-284,Passband Ripple,δ P,"f < f PLP , referenced to signal level @ 1kHz",-0.1,,0.1,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",No,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-285,Stopband,f SLP,Attenuation > δ S,,,0.52f S,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",No,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-286,Stopband Attenuation,δ S,f > f SLP,75,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",No,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-287,Nyquist Attenuation,,,60,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",No,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-288,BWA Delay,BWA,"Bark Weighted Average, f S =8 kHz",,,3.9,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",No,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-337,Group Delay,,f = f PLP,,24,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",No,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-338,Group Delay,,f = 1kHz,,8,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",No,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-290,Square Overshoot,,"-3dBFS square wave input, 1kHz",,,2.3,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",No,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-291,Valid Sample Rates,,,8,,48,VI - Internal Design Target,Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-292,Passband,f PLP,Ripple < δ P,0.45f S,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-293,Passband,,Droop < 3dB,0.46f S,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-294,Passband Ripple,δ P,"f < f PLP , referenced to signal level @ 1kHz",-0.1,,0.1,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-295,Stopband,f SLP,Attenuation > δ S,,,0.49f S,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-296,Stopband Attenuation,δ S,f > f SLP,80,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-339,Group Delay,,f = f PLP,,24,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-340,Group Delay,,f = 1kHz,,8,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-298,Valid Sample Rates,,,88.2,,192,VI - Internal Design Target,Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-299,Passband,f PLP,"Ripple < δ P , 88.2kHz ≤ f S  ≤ 96kHz",0.23f S,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-300,Passband,,"Droop < 3dB, 88.2kHz ≤ f S  ≤ 96kHz",0.31f S,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-301,Passband,f PLP,"Ripple < δ P , 176.4kHz ≤ fs ≤ 192kHz",0.11f S,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-302,Passband,,"Droop < 3dB, 176.4kHz ≤ fs ≤ 192kHz",0.23f S,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-303,Passband Ripple,δ P,"f < f PLP , referenced to signal level @ 1kHz",-0.1,,0.1,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-304,Stopband,f SLP,Attenuation > δ S,,,0.49f S,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-305,Stopband Attenuation,δ S,f > f SLP,80,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-341,Group Delay,,f = f PLP,,13,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-342,Group Delay,,f = 1kHz,,12,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-77,Corner Frequency,f c,f S  = 8kHz,,0.312,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-78,Corner Frequency,f c,f S  = 48kHz,,1.872,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-79,Corner Frequency,f c,f S  = 96kHz,,3.744,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-80,Corner Frequency,f c,f S  = 192kHz,,7.488,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-92,Output Offset Voltage,V OS,"T A  = +25°C, ZSPK = 8Ω + 33µH or 4Ω + 33µH, DRE_EN = 0, SPK_PCM_GAIN = 110b (18dB), V PVDD  = 6.5V",,±1,±3,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-754,Post_Spk_Vos_PostTrim,HZ06-MVPATE-754,Post_Spk_Vos_PostTrim,1505
+HZ06-PSPEC2-93,Click-and-Pop Level,K CP,"Peak voltage, A-weighted, 32 samples per second. Digital audio inputs have zero-code input, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, out of Shutdown, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 10b (boost bypass disabled)",,-63,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-94,Click-and-Pop Level,K CP,"Peak voltage, A-weighted, 32 samples per second. Digital audio inputs have zero-code input, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, into Shutdown, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 10b (boost bypass disabled)",,-66,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-348,Click-and-Pop Level,K CP,"Peak voltage, A-weighted, 32 samples per second. Digital audio inputs have zero-code input, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, out of Shutdown, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 00b (boost bypass enabled)",,-63,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-349,Click-and-Pop Level,K CP,"Peak voltage, A-weighted, 32 samples per second. Digital audio inputs have zero-code input, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, into Shutdown, AMP_FET_SCALE_MODE = 01b (FET scaling disabled), BST_BYP_MODE = 00b (boost bypass enabled)",,-66,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-350,Click-and-Pop Level,K CP,"Peak voltage, A-weighted, 32 samples per second. Digital audio inputs have zero-code input, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, out of Shutdown, AMP_FET_SCALE_MODE = 00b (FET scaling enabled), BST_BYP_MODE = 10b (boost bypass disabled)",,-63,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-351,Click-and-Pop Level,K CP,"Peak voltage, A-weighted, 32 samples per second. Digital audio inputs have zero-code input, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, into Shutdown, AMP_FET_SCALE_MODE = 00b (FET scaling enabled), BST_BYP_MODE = 10b (boost bypass disabled)",,-66,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-352,Click-and-Pop Level,K CP,"Peak voltage, A-weighted, 32 samples per second. Digital audio inputs have zero-code input, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, out of Shutdown, AMP_FET_SCALE_MODE = 00b (FET scaling enabled), BST_BYP_MODE = 00b (boost bypass enabled)",,-63,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-353,Click-and-Pop Level,K CP,"Peak voltage, A-weighted, 32 samples per second. Digital audio inputs have zero-code input, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, into Shutdown, AMP_FET_SCALE_MODE = 00b (FET scaling enabled), BST_BYP_MODE = 00b (boost bypass enabled)",,-66,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-95,Dynamic Range ,DNR,"LRCLK = 48kHz, 24 or 32 bits, -60dBFS 1kHz output signal, normalized to full scale (THD+N = 1%), Z SPK  = 8Ω + 33µH, A-weighted",,108,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1010,Dynamic Range,HZ06-MVPATE-1945,Spk_DNR[dB],7330
+HZ06-PSPEC2-96,Dynamic Range ,DNR,"LRCLK = 48kHz, 24 or 32 bits, -60dBFS 1kHz output signal, normalized to full scale (THD+N = 1%), Z SPK  = 8Ω + 33µH, un-weighted",,105,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-97,Dynamic Range ,DNR,"LRCLK = 48kHz, 24 or 32 bits, -60dBFS 1kHz output signal, normalized to full scale (THD+N = 1%), Z SPK  = 4Ω + 33µH, A-weighted",,107,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-98,Dynamic Range ,DNR,"LRCLK = 48kHz, 24 or 32 bits, -60dBFS 1kHz output signal, normalized to full scale (THD+N = 1%), Z SPK  = 4Ω + 33µH, un-weighted",,104,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-99,Output Noise,e Nd,"Z SPK  = 8Ω + 33µH or 4Ω + 33µH, DRE enabled, A-weighted",,22,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1192,Output Noise,HZ06-MVPATE-1192,Output Noise,7310
+,,,,,,,,,HZ06-MVPHUB-1191,Output Noise_Aweighted,HZ06-MVPATE-1191,Output Noise_Aweighted,
+HZ06-PSPEC2-100,Output Noise,e Nd,"Z SPK  = 8Ω + 33µH or 4Ω + 33µH, DRE enabled, un-weighted",,40,,"VII - Production Tested, Internal Only",No,HZ06-MVPHUB-1192,Output Noise,HZ06-MVPATE-1192,Output Noise,7310
+HZ06-PSPEC2-354,Output Noise,e Nd,"Z SPK  = 8Ω + 33µH or 4Ω + 33µH, DRE enabled, A-weighted, receiver mode",,14,,"VII - Production Tested, Internal Only",Yes,,,,,
+HZ06-PSPEC2-101,Power Supply Input Range,PVDD,Guaranteed by Class D PSRR test,2.65,,10,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1006,"PSRR (PVDD,VBAT)",HZ06-MVPATE-1006,"PSRR (PVDD,VBAT)",7055
+HZ06-PSPEC2-102,Output Power,P OUT,"V VBAT  = 4.3V, THD+N ≤ 1%, I LIM  = 4.1A, Z SPK  = 8Ω+33µH",,3.6,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-103,Output Power,P OUT,"V VBAT  = 4.3V, THD+N ≤ 1%, I LIM  = 4.1A, Z SPK  = 6Ω+33µH",,4.6,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-104,Output Power,P OUT,"V VBAT  = 4.3V, THD+N ≤ 1%, I LIM  = 4.1A, Z SPK  = 4Ω+33µH",,4.9,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-105,Output Power,P OUT,"V VBAT  = 4.3V, THD+N ≤ 10%, I LIM  = 4.1A, Z SPK  = 8Ω+33µH",,4.6,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-106,Output Power,P OUT,"V VBAT  = 4.3V, THD+N ≤10%, I LIM  = 4.1A, Z SPK  = 6Ω+33µH",,5.7,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-107,Output Power,P OUT,"V VBAT  = 4.3V, THD+N ≤10%, I LIM  = 4.1A, Z SPK  = 4Ω+33µH",,6.1,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-260,Output Power,P OUT,"V VBAT  = 4.3V, V PVDD  = 10V (BST_VOUT = 11100b), THD+N ≤ 1%, ILIM = 4.1A, Z SPK  = 8Ω+33µH",,4.7,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-261,Output Power,P OUT,"V PVDD  = 4.3V, V VBST  = 10V (BST_VOUT = 11100b), THD+N ≤ 1%, ILIM = 4.1A, Z SPK  = 4Ω+33µH",,4.8,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-262,Output Power,P OUT,"V VBAT  = 4.3V, V PVDD  = 10V (BST_VOUT = 11100b), THD+N ≤ 10%, ILIM = 4.1A, Z SPK  = 8Ω+33µH",,5.8,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-263,Output Power,P OUT,"V VBAT  = 4.3V, V PVDD  = 10V (BST_VOUT = 11100b), THD+N ≤ 10%, ILIM = 4.1A, Z SPK  = 4Ω+33µH",,6.1,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-108,Total Harmonic Distortion + Noise,THD+N,"f = 1kHz, P OUT  = 0.5W, Z SPK  = 8Ω+33µH",,0.016,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-109,Total Harmonic Distortion + Noise,THD+N,"f = 1kHz, P OUT  = 0.5W, Z SPK  = 4Ω+33µH",,0.016,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,HZ06-MVPHUB-1008,THD+N,HZ06-MVPATE-1943,THD+N,7305
+,,,,,,,,,HZ06-MVPHUB-1918,THD+N (boost_bypassed_en),HZ06-MVPATE-1950,THD+N_bst_bypass_en,7306
+HZ06-PSPEC2-110,Intermodulation Distortion,IMD,"ITU-R, 5.5kHz/6.5kHz, 1:1, V OUT  = 2V pk , Z SPK  = 8Ω + 33µH",,65,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-111,VBAT Power Supply Rejection Ratio (VBAT to Speaker Amplifier),PSRR,"Boost on, no input signal, Z SPK  = ∞, DC, V VBAT  = 2.65V to 5.5V",,100,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1006,"PSRR (PVDD,VBAT)",HZ06-MVPATE-1006,"PSRR (PVDD,VBAT)",7055
+HZ06-PSPEC2-112,VBAT Power Supply Rejection Ratio (VBAT to Speaker Amplifier),PSRR,"Boost on, no input signal, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, AC, f = 217Hz, V VBAT  ripple = 500mV PP",,100,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-113,VBAT Power Supply Rejection Ratio (VBAT to Speaker Amplifier),PSRR,"Boost on, no input signal, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, AC, f = 1kHz, V VBAT  ripple = 500mV PP",,95,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-114,VBAT Power Supply Rejection Ratio (VBAT to Speaker Amplifier),PSRR,"Boost on, no input signal, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, AC, f = 10kHz, V VBAT  ripple = 500mV PP",,80,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-274,VBAT Power Supply Rejection Ratio (VBAT to Speaker Amplifier),PSRR,"Boost bypassed, no input signal, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, DC, V VBAT  = 2.65V to 5.5V",,70,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,HZ06-MVPHUB-1914,VBAT Power Supply Rejection Ratio (VBAT to Speaker Amplifier),HZ06-MVPATE-1946,PSRR_bst_bypass_enabled(,7384
+HZ06-PSPEC2-275,VBAT Power Supply Rejection Ratio (VBAT to Speaker Amplifier),PSRR,"Boost bypassed, no input signal, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, AC, f = 217Hz, V VBAT  ripple = 500mV PP",,70,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-276,VBAT Power Supply Rejection Ratio (VBAT to Speaker Amplifier),PSRR,"Boost bypassed, no input signal, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, AC, f = 1kHz, V VBAT  ripple = 500mV PP",,70,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-277,VBAT Power Supply Rejection Ratio (VBAT to Speaker Amplifier),PSRR,"Boost bypassed, no input signal, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, AC, f = 10kHz, V VBAT  ripple = 500mV PP",,60,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-115,DVDD Power Supply Rejection Ratio (DVDD to Speaker Amplifier),PSRR,"No input signal, Z SPK  = 8Ω + 33µH or 4Ω + 33µH, AC, f = 1kHz, V DVDD  ripple = 100mV PP",,90,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-116,Output Switching Frequency,f S,48kHz related sample rates,,646,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1005,Output_freq,HZ06-MVPATE-1005,Output_freq,7030 7035
+HZ06-PSPEC2-257,Output Switching Frequency,f S,44.1kHz related sample rates,,639,,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-258,Output Switching Frequency,f S,"SPK_FSW_SEL = 1, 48kHz related sample rates",,326,,VI - Internal Design Target,No,,,,,
+HZ06-PSPEC2-259,Output Switching Frequency,f S,"SPK_FSW_SEL = 1, 44.1kHz related sample rates",,319,,VI - Internal Design Target,No,,,,,
+HZ06-PSPEC2-117,Efficiency,η SPK,"P OUT  = 2W, f = 1kHz, Z SPK  = 8Ω + 33µH, PVDD external ",,93,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-118,Efficiency,η SPK,"P OUT  = 4W, f = 1kHz, Z SPK  = 4Ω + 33µH, PVDD external ",,86,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-119,Current Limit,I LIM,,,4.5,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1023,IlimPmosN_noTrip,HZ06-MVPATE-1023,IlimPmosN_noTrip,7410
+,,,,,,,,,HZ06-MVPHUB-1021,IlimPmosP_noTrip,HZ06-MVPATE-1021,IlimPmosP_noTrip,7400
+HZ06-PSPEC2-120,Output Stage On-Resistance,R ON,PMOS + NMOS (Full H-Bridge),,400,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1853,OUTN_NMOS_RdsON,HZ06-MVPATE-1881,OUTN_NMOS_RdsON,7215
+,,,,,,,,,HZ06-MVPHUB-1854,OUTN_PMOS_RdsON,HZ06-MVPATE-1882,OUTN_PMOS_RdsON,7220
+,,,,,,,,,HZ06-MVPHUB-1851,OUTP_NMOS_RdsON,HZ06-MVPATE-1879,OUTP_NMOS_RdsON,7200
+,,,,,,,,,HZ06-MVPHUB-1852,OUTP_PMOS RdsON,HZ06-MVPATE-1880,OUTP_PMOS RdsON,7205
+HZ06-PSPEC2-121,Output Stage On-Resistance Matching,,​OUTP PMOS + OUTN NMOS vs OUTP NMOS + OUTN PMOS,,25,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1856,NMOS Matching,HZ06-MVPATE-1884,NMOS Matching,7230
+,,,,,,,,,HZ06-MVPHUB-1855,PMOS Matching,HZ06-MVPATE-1883,PMOS Matching,7225
+HZ06-PSPEC2-278,Amplifier Short Circuit Autorestart,,Amplifier outputs exceed output current limit.,,100,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-344,Load Resistance,R SPK,,3.2,,,VI - Internal Design Target,No,,,,,
+HZ06-PSPEC2-345,Load Inductance,L SPK,,0,,300,VI - Internal Design Target,No,,,,,
+HZ06-PSPEC2-122,Resolution,,,,8,,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-123,VBAT Measurement Voltage Range,,,2.65,,5.5,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-765,Batt_ADC_MaxV,HZ06-MVPATE-765,Batt_ADC_MaxV,1515
+,,,,,,,,,HZ06-MVPHUB-763,Batt_ADC_MinV,HZ06-MVPATE-763,Batt_ADC_MinV,1520
+HZ06-PSPEC2-124,VBAT Measurement Accuracy,,T A  = 25°C,-37.5,,37.5,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-767,Batt_abs_acc,HZ06-MVPATE-767,Batt_abs_acc,1545
+HZ06-PSPEC2-125,VBAT Measurement Accuracy,,Across specified T A  range,-45,,45,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-767,Batt_abs_acc,HZ06-MVPATE-767,Batt_abs_acc,1545
+HZ06-PSPEC2-126,PVDD Measurement Voltage Range,,,6,,11,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-771,Bst_ADC_MaxV,HZ06-MVPATE-771,Bst_ADC_MaxV,1550
+,,,,,,,,,HZ06-MVPHUB-769,Bst_ADC_MinV,HZ06-MVPATE-769,Bst_ADC_MinV,1555
+HZ06-PSPEC2-127,PVDD Measurement Accuracy,,,-100,,100,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-773,Bst_abs_acc,HZ06-MVPATE-773,Bst_abs_acc,1580
+HZ06-PSPEC2-129,Temperature Measurement Accuracy,,T A  = 25°C to 150°C,,±8,,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-776,ADC_Temp_acc,HZ06-MVPATE-776,ADC_Temp_acc,1595
+HZ06-PSPEC2-130,BDE Gain Attack Delay Time to Gain Change,,Measurement ADC sampling VBAT at 512kHz,,10,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-131,BDE Gain Attack Delay Time to Interrupt,,Measurement ADC sampling VBAT at 512kHz,,5,,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-132,Resolution,,,,16,,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-133,Sample Rate,,,4,,48,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-134,Voltage Range,,,,+/-11,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-998,V_gain_20V,HZ06-MVPATE-998,V_gain_20V,4560
+HZ06-PSPEC2-135,DC Offset Voltage,,"Z SPK  = 8Ω+33μH or 4Ω+33μH, 3.7Hz DC blocking filter enabled",,+/-0.2,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-136,DC Offset Voltage,,"Z SPK  = 8Ω+33μH or 4Ω+33μH, DC blocking filter disabled",,TBD (1σ),,"IV - Not Production Tested, Characterized by ATE",No,HZ06-MVPHUB-1001,VMON_Offset,HZ06-MVPATE-1001,VMON_Offset,4575
+HZ06-PSPEC2-137,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-15kHz, unweighted, boost on",,80,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1003,"VMON_DNR_8p5V(-60dB, 22-20KHz)",HZ06-MVPATE-1003,"VMON_DNR_8p5V(-60dB, 22-20KHz)",7340
+HZ06-PSPEC2-325,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-15kHz, unweighted, boost bypassed",,78,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1846,"VMON_DNR_bst_bypassed_3p7V(-60dB, 22-20KHz)",HZ06-MVPATE-1953,"VMON_DNR_bst_bypassed_3p7V(-60dB, 22-20KHz)",7344
+HZ06-PSPEC2-138,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-20kHz, unweighted, boost on",,79,,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1003,"VMON_DNR_8p5V(-60dB, 22-20KHz)",HZ06-MVPATE-1003,"VMON_DNR_8p5V(-60dB, 22-20KHz)",7340
+HZ06-PSPEC2-326,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-20kHz, unweighted, boost bypassed",,77,,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1846,"VMON_DNR_bst_bypassed_3p7V(-60dB, 22-20KHz)",HZ06-MVPATE-1953,"VMON_DNR_bst_bypassed_3p7V(-60dB, 22-20KHz)",7344
+HZ06-PSPEC2-139,Total Harmonic Distortion + Noise,THD+N,"f = 1kHz, speaker voltage = 3V RMS , boost on",,-65,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1002,VMON_THD+N_8p5V,HZ06-MVPATE-1002,VMON_THD+N_8p5V,7335
+HZ06-PSPEC2-327,Total Harmonic Distortion + Noise,THD+N,"f = 1kHz, speaker voltage = 3V RMS , boost bypassed",,TBD,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1847,VMON_THD+N_bst_bypass_3p7V,HZ06-MVPATE-1877,VMON_THD+N_bst_bypass_3p7V,7342
+HZ06-PSPEC2-140,Absolute Accuracy,,T A  = +25°C,,+/-1,+/-3,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-999,V_sns_abs_acc,HZ06-MVPATE-999,V_sns_abs_acc,4565
+HZ06-PSPEC2-141,Passband Ripple,,f ≤ 0.42fs,-0.1,,0.1,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",No,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-142,Low Pass Filter Cutoff Frequency,,-3dB limit,0.45fs,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-143,Low Pass Filter Stopband Frequency,,-40dB limit,,,0.58fs,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-144,Low Pass Filter Stopband Attenuation,,,40,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-145,DVDD Power Supply Rejection Ratio (DVDD to VMON),PSRR,"No Input Signal, DVDD=1.8V, AC, f = 1kHz, 100mVP-P ripple",,100,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-146,High Pass Cutoff Frequency,,"-3dB Limit, MEAS_V_DCBLK[1:0] = 00",,0.06,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-147,High Pass Cutoff Frequency,,"-3dB Limit, MEAS_V_DCBLK[1:0] = 01",,0.118,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-148,High Pass Cutoff Frequency,,"-3dB Limit, MEAS_V_DCBLK[1:0] = 10",,0.235,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-149,High Pass Cutoff Frequency,,"-3dB Limit, MEAS_V_DCBLK[1:0] = 11",,3.7,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-150,Resolution,,,,16,,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-151,Sample Rate,,,4,,48,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-152,Current Range,,,,+/-3,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-982,I_sns_gain_6A,HZ06-MVPATE-982,I_sns_gain_6A,4440
+HZ06-PSPEC2-153,DC Offset Current,,"Z SPK  = 8Ω+33μH or 4Ω+33μH, 3.7Hz DC blocking filter enabled",,+/-0.12,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-1919,IMON_DC Offset Current(DC blocking filter enabled),HZ06-MVPATE-1952,IMON_DC Offset Current(DC blocker enabled),7385
+HZ06-PSPEC2-154,DC Offset Current,,"Z SPK  = 8Ω+33μH or 4Ω+33μH, DC blocking filter disabled",,TBD (1σ),,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",No,HZ06-MVPHUB-970,IMON_ Offset,HZ06-MVPATE-970,IMON_ Offset,4335
+,,,,,,,,,HZ06-MVPHUB-1920,IMON_DC Offset Current,HZ06-MVPATE-1951,IMON_DC Offset Current,7380
+HZ06-PSPEC2-155,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-15kHz, unweighted, boost on",,78,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-986,IMON_Dynamic Range,HZ06-MVPATE-986,IMON_Dynamic Range,7350
+HZ06-PSPEC2-328,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-15kHz, unweighted, boost bypassed",,76,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1897,IMON_DNR_boost_bypassed_20khz,HZ06-MVPATE-1925,IMON_DNR_boost_bypassed_20khz,7360
+HZ06-PSPEC2-156,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-20kHz, unweighted, boost on",,76,,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-986,IMON_Dynamic Range,HZ06-MVPATE-986,IMON_Dynamic Range,7350
+HZ06-PSPEC2-329,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-20kHz, unweighted, boost bypassed",,74,,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1897,IMON_DNR_boost_bypassed_20khz,HZ06-MVPATE-1925,IMON_DNR_boost_bypassed_20khz,7360
+HZ06-PSPEC2-157,Total Harmonic Distortion + Noise,THD+N,"f = 1kHz, speaker current = 375mA RMS , boost on",,-59,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-985,IMON_THD+N,HZ06-MVPATE-985,IMON_THD+N_Boost_On_20khz,7345
+HZ06-PSPEC2-330,Total Harmonic Distortion + Noise,THD+N,"f = 1kHz, speaker current = 375mA RMS , boost bypassed",,TBD,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1896,IMON_THD + N Boost bypassed,HZ06-MVPATE-1924,IMON_THD + N Boost bypassed,7355
+HZ06-PSPEC2-158,Absolute Accuracy,,T A  = +25°C,,+/-2,+/-3,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-983,I_sns_abs_acc,HZ06-MVPATE-983,I_sns_abs_acc,4460
+HZ06-PSPEC2-159,Voltage and Current Accuracy Drift Tracking,,"T A  = 0°C to 85°C, normalized to 25°C",,0.4,,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-160,Voltage to Current Crosstalk,,I/V data on PCM interface,,-60,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-755,IV_Xtalk_Post,HZ06-MVPATE-755,IV_Xtalk_Post,4200
+HZ06-PSPEC2-161,Voltage to Current Crosstalk,,I/V data on PDM interface,,-60,,VI - Internal Design Target,Yes,HZ06-MVPHUB-755,IV_Xtalk_Post,HZ06-MVPATE-755,IV_Xtalk_Post,4200
+HZ06-PSPEC2-162,Passband Ripple,,f ≤ 0.42fs,-0.1,,0.1,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",No,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-163,Low Pass Filter Cutoff Frequency,,-3dB limit,0.45fs,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-164,Low Pass Filter Stopband Frequency,,-40dB limit,,,0.58fs,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-165,Low Pass Filter Stopband Attenuation,,,40,,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-166,DVDD Power Supply Rejection Ratio (DVDD to IMON),PSRR,"No Input Signal, VDVDD=1.8V, AC, f = 1kHz, 100mVP-P ripple",,100,,"V - Not Production Tested, Characterized by Bench (GBDC)",No,,,,,
+HZ06-PSPEC2-167,High Pass Cutoff Frequency,,"-3dB Limit, MEAS_I_DCBLK[1:0] = 00",,0.06,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-168,High Pass Cutoff Frequency,,"-3dB Limit, MEAS_I_DCBLK[1:0] = 01",,0.118,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-169,High Pass Cutoff Frequency,,"-3dB Limit, MEAS_I_DCBLK[1:0] = 10",,0.235,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-170,High Pass Cutoff Frequency,,"-3dB Limit, MEAS_I_DCBLK[1:0] = 11",,3.7,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-171,Input Voltage High,V IH,,0.7 x DVDD,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1039,Vih_BCLK,HZ06-MVPATE-1039,Vih_BCLK,8045
+,,,,,,,,,HZ06-MVPHUB-1041,Vih_Din,HZ06-MVPATE-1041,Vih_Din,8055
+,,,,,,,,,HZ06-MVPHUB-1048,Vih_ICC,HZ06-MVPATE-1048,Vih_ICC,8085
+,,,,,,,,,HZ06-MVPHUB-1040,Vih_LRCLK,HZ06-MVPATE-1040,Vih_LRCLK,8050
+,,,,,,,,,HZ06-MVPHUB-1043,Vih_MCLK,HZ06-MVPATE-1043,Vih_MCLK,8065
+,,,,,,,,,HZ06-MVPHUB-1042,Vih_WDT,HZ06-MVPATE-1042,Vih_WDT,8060
+,,,,,,,,,HZ06-MVPHUB-1029,Vil_BCLK,HZ06-MVPATE-1029,Vil_BCLK,8000
+,,,,,,,,,HZ06-MVPHUB-1031,Vil_DIN,HZ06-MVPATE-1031,Vil_DIN,8010
+,,,,,,,,,HZ06-MVPHUB-1030,Vil_LRCLK,HZ06-MVPATE-1030,Vil_LRCLK,8005
+HZ06-PSPEC2-172,Input Voltage Low,V IL,,,,0.3 x DVDD,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1037,Vil_ICC,HZ06-MVPATE-1037,Vil_ICC,8040
+,,,,,,,,,HZ06-MVPHUB-1033,Vil_MCLK,HZ06-MVPATE-1033,Vil_MCLK,8020
+,,,,,,,,,HZ06-MVPHUB-1032,Vil_WDT,HZ06-MVPATE-1032,Vil_WDT,8015
+HZ06-PSPEC2-173,Input Hysteresis,V hyst,,,0.2 x DVDD,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-174,Input Leakage Current,,,-1,,3.5,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-636,IH_BCLK/SWCLK,HZ06-MVPATE-636,IH_BCLK/SWCLK,490
+,,,,,,,,,HZ06-MVPHUB-638,IH_DIN/SWDATA,HZ06-MVPATE-638,IH_DIN/SWDATA,500
+,,,,,,,,,HZ06-MVPHUB-646,IH_ICC,HZ06-MVPATE-646,IH_ICC,540
+,,,,,,,,,HZ06-MVPHUB-637,IH_LRCLK,HZ06-MVPATE-637,IH_LRCLK,495
+,,,,,,,,,HZ06-MVPHUB-645,IH_MCLK,HZ06-MVPATE-645,IH_MCLK,535
+,,,,,,,,,HZ06-MVPHUB-642,IH_WDT,HZ06-MVPATE-642,IH_WDT,520
+,,,,,,,,,HZ06-MVPHUB-619,IL_BCLK/SWCLK,HZ06-MVPATE-619,IL_BCLK/SWCLK,405
+,,,,,,,,,HZ06-MVPHUB-621,IL_DIN/SWDATA,HZ06-MVPATE-621,IL_DIN/SWDATA,415
+,,,,,,,,,HZ06-MVPHUB-629,IL_ICC,HZ06-MVPATE-629,IL_ICC,455
+,,,,,,,,,HZ06-MVPHUB-620,IL_LRCLK,HZ06-MVPATE-620,IL_LRCLK,410
+,,,,,,,,,HZ06-MVPHUB-628,IL_MCLK,HZ06-MVPATE-628,IL_MCLK,450
+,,,,,,,,,HZ06-MVPHUB-625,IL_WDT,HZ06-MVPATE-625,IL_WDT,435
+HZ06-PSPEC2-175,Input Capacitance,C IN,"DIN, MCLK/PDMRXCLK, PDMRXDAT",,3,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-176,Input Capacitance,,"BCLK, LRCLK, ICC/PDMTXCLK",,14,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-177,Input Voltage High,V IH,,0.7 x DVDD,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1044,Vih_ADDR,HZ06-MVPATE-1044,Vih_ADDR,8070
+,,,,,,,,,HZ06-MVPHUB-1047,Vih_RESET,HZ06-MVPATE-1047,Vih_RESET,8095
+HZ06-PSPEC2-178,Input Voltage Low,V IL,,,,0.3 x DVDD,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1034,Vil_ADDR,HZ06-MVPATE-1034,Vil_ADDR,8025
+,,,,,,,,,HZ06-MVPHUB-1038,Vil_RESET,HZ06-MVPATE-1038,Vil_RESET,8090
+HZ06-PSPEC2-179,Input Leakage Current,,,-1,,1,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-643,IH_ADDR,HZ06-MVPATE-643,IH_ADDR,525
+,,,,,,,,,HZ06-MVPHUB-644,IH_RESET,HZ06-MVPATE-644,IH_RESET,530
+,,,,,,,,,HZ06-MVPHUB-626,IL_ADDR,HZ06-MVPATE-626,IL_ADDR,440
+,,,,,,,,,HZ06-MVPHUB-627,IL_RESET,HZ06-MVPATE-627,IL_RESET,445
+HZ06-PSPEC2-180,Input Capacitance,,,,3,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-181,Output Voltage High,V OH,"I OH = 4mA, normal drive mode",V DVDD  - 0.3,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1056,Voh_BCLK_01,HZ06-MVPATE-1056,Voh_BCLK_01,8165
+,,,,,,,,,HZ06-MVPHUB-1055,Voh_DOUT_01,HZ06-MVPATE-1055,Voh_DOUT_01,8160
+,,,,,,,,,HZ06-MVPHUB-1058,Voh_ICC_01,HZ06-MVPATE-1058,Voh_ICC_01,8175
+,,,,,,,,,HZ06-MVPHUB-1057,Voh_LRCLK_01,HZ06-MVPATE-1057,Voh_LRCLK_01,8170
+HZ06-PSPEC2-182,Output Voltage Low,V OL,"I OL = 4mA, normal drive mode",,,0.3,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1072,Vol_BCLK_01,HZ06-MVPATE-1072,Vol_BCLK_01,8145
+,,,,,,,,,HZ06-MVPHUB-1071,Vol_DOUT_01,HZ06-MVPATE-1071,Vol_DOUT_01,8140
+,,,,,,,,,HZ06-MVPHUB-1074,Vol_ICC_01,HZ06-MVPATE-1074,Vol_ICC_01,8155
+,,,,,,,,,HZ06-MVPHUB-1073,Vol_LRCLK_01,HZ06-MVPATE-1073,Vol_LRCLK_01,8150
+HZ06-PSPEC2-183,Output Current,I OH,Highest drive mode,,16,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,HZ06-MVPHUB-1064,Voh_BCLK_11,HZ06-MVPATE-1064,Voh_BCLK_11,8245
+,,,,,,,,,HZ06-MVPHUB-1063,Voh_DOUT_11,HZ06-MVPATE-1063,Voh_DOUT_11,8240
+,,,,,,,,,HZ06-MVPHUB-1066,Voh_ICC_11,HZ06-MVPATE-1066,Voh_ICC_11,8255
+,,,,,,,,,HZ06-MVPHUB-1065,Voh_LRCLK_11,HZ06-MVPATE-1065,Voh_LRCLK_11,8250
+,,,,,,,,,HZ06-MVPHUB-1080,Vol_BCLK_11,HZ06-MVPATE-1080,Vol_BCLK_11,8225
+,,,,,,,,,HZ06-MVPHUB-1079,Vol_DOUT_11,HZ06-MVPATE-1079,Vol_DOUT_11,8220
+,,,,,,,,,HZ06-MVPHUB-1082,Vol_ICC_11,HZ06-MVPATE-1082,Vol_ICC_11,8235
+,,,,,,,,,HZ06-MVPHUB-1081,Vol_LRCLK_11,HZ06-MVPATE-1081,Vol_LRCLK_11,8230
+HZ06-PSPEC2-184,Output Current,I OH,High drive mode,,12,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,HZ06-MVPHUB-1060,Voh_BCLK_10,HZ06-MVPATE-1060,Voh_BCLK_10,8205
+,,,,,,,,,HZ06-MVPHUB-1059,Voh_DOUT_10,HZ06-MVPATE-1059,Voh_DOUT_10,8200
+,,,,,,,,,HZ06-MVPHUB-1062,Voh_ICC_10,HZ06-MVPATE-1062,Voh_ICC_10,8215
+,,,,,,,,,HZ06-MVPHUB-1061,Voh_LRCLK_10,HZ06-MVPATE-1061,Voh_LRCLK_10,8210
+,,,,,,,,,HZ06-MVPHUB-1076,Vol_BCLK_10,HZ06-MVPATE-1076,Vol_BCLK_10,8185
+,,,,,,,,,HZ06-MVPHUB-1075,Vol_DOUT_10,HZ06-MVPATE-1075,Vol_DOUT_10,8180
+,,,,,,,,,HZ06-MVPHUB-1078,Vol_ICC_10,HZ06-MVPATE-1078,Vol_ICC_10,8195
+,,,,,,,,,HZ06-MVPHUB-1077,Vol_LRCLK_10,HZ06-MVPATE-1077,Vol_LRCLK_10,8190
+HZ06-PSPEC2-185,Output Current,I OH,Normal drive mode,,8,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,HZ06-MVPHUB-1056,Voh_BCLK_01,HZ06-MVPATE-1056,Voh_BCLK_01,8165
+,,,,,,,,,HZ06-MVPHUB-1055,Voh_DOUT_01,HZ06-MVPATE-1055,Voh_DOUT_01,8160
+,,,,,,,,,HZ06-MVPHUB-1058,Voh_ICC_01,HZ06-MVPATE-1058,Voh_ICC_01,8175
+,,,,,,,,,HZ06-MVPHUB-1057,Voh_LRCLK_01,HZ06-MVPATE-1057,Voh_LRCLK_01,8170
+,,,,,,,,,HZ06-MVPHUB-1072,Vol_BCLK_01,HZ06-MVPATE-1072,Vol_BCLK_01,8145
+,,,,,,,,,HZ06-MVPHUB-1071,Vol_DOUT_01,HZ06-MVPATE-1071,Vol_DOUT_01,8140
+,,,,,,,,,HZ06-MVPHUB-1074,Vol_ICC_01,HZ06-MVPATE-1074,Vol_ICC_01,8155
+,,,,,,,,,HZ06-MVPHUB-1073,Vol_LRCLK_01,HZ06-MVPATE-1073,Vol_LRCLK_01,8150
+HZ06-PSPEC2-186,Output Current,I OH,Reduced drive mode,,4,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,HZ06-MVPHUB-1068,Voh_BCLK_00,HZ06-MVPATE-1068,Voh_BCLK_00,8125
+,,,,,,,,,HZ06-MVPHUB-1067,Voh_DOUT_00,HZ06-MVPATE-1067,Voh_DOUT_00,8120
+,,,,,,,,,HZ06-MVPHUB-1070,Voh_ICC_00,HZ06-MVPATE-1070,Voh_ICC_00,8135
+,,,,,,,,,HZ06-MVPHUB-1069,Voh_LRCLK_00,HZ06-MVPATE-1069,Voh_LRCLK_00,8130
+,,,,,,,,,HZ06-MVPHUB-1084,Vol_BCLK_00,HZ06-MVPATE-1084,Vol_BCLK_00,8105
+,,,,,,,,,HZ06-MVPHUB-1083,Vol_DOUT_00,HZ06-MVPATE-1083,Vol_DOUT_00,8100
+,,,,,,,,,HZ06-MVPHUB-1086,Vol_ICC_00,HZ06-MVPATE-1086,Vol_ICC_00,8115
+,,,,,,,,,HZ06-MVPHUB-1085,Vol_LRCLK_00,HZ06-MVPATE-1085,Vol_LRCLK_00,8110
+HZ06-PSPEC2-187,Input Voltage High,V IH,,0.7 x V DVDD,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1045,Vih_SCL,HZ06-MVPATE-1045,Vih_SCL,8075
+,,,,,,,,,HZ06-MVPHUB-1046,Vih_SDA,HZ06-MVPATE-1046,Vih_SDA,8080
+HZ06-PSPEC2-188,Input Voltage Low,V IL,,,,0.3 x V DVDD,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1035,Vil_SCL,HZ06-MVPATE-1035,Vil_SCL,8030
+,,,,,,,,,HZ06-MVPHUB-1036,Vil_SDA,HZ06-MVPATE-1036,Vil_SDA,8035
+HZ06-PSPEC2-189,Input Hysteresis,V HYST,,,200,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-190,Input Capacitance,C IN,,,10,,"V - Not Production Tested, Characterized by Bench (GBDC)",Yes,,,,,
+HZ06-PSPEC2-191,Input High Leakage Current,,"T A  = +25°C, Input High",-1,,1,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-641,IH_SCL,HZ06-MVPATE-641,IH_SCL,515
+,,,,,,,,,HZ06-MVPHUB-640,IH_SDA,HZ06-MVPATE-640,IH_SDA,510
+HZ06-PSPEC2-192,Input Low Leakage Current,,"T A  = +25°C, Input Low",-1,,1,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-624,IL_SCL,HZ06-MVPATE-624,IL_SCL,430
+,,,,,,,,,HZ06-MVPHUB-623,IL_SDA,HZ06-MVPATE-623,IL_SDA,425
+HZ06-PSPEC2-193,Output Low Voltage,V OL,I SINK  = 4mA,,,0.4,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1050,Vol_IRQ,HZ06-MVPATE-1050,Vol_IRQ,8260
+,,,,,,,,,HZ06-MVPHUB-1049,Vol_SDA,HZ06-MVPATE-1049,Vol_SDA,8265
+HZ06-PSPEC2-194,Output High Leakage Current,I OH,T A  = +25°C,-1,,1,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-640,IH_SDA,HZ06-MVPATE-640,IH_SDA,510
+HZ06-PSPEC2-195,LRCLK Frequency,f LRCLK,,8,,192,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1913,LRCLK Frequency Max,HZ06-MVPATE-1941,LRCLK Frequency Max,7022
+,,,,,,,,,HZ06-MVPHUB-1912,LRCLK Frequency Min,HZ06-MVPATE-1940,LRCLK Frequency Min,7021
+HZ06-PSPEC2-196,Maximum MDLL Source Clock Low-Frequency Jitter,,"Maximum allowable jitter before -20dBFS, 20kHz input has 1dB reduction in THD+N. RMS jitter ≤ 40kHz, DRE enabled",,0.2,,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-197,Maximum MDLL Source Clock High-Frequency Jitter,,"Maximum allowable jitter before -60dBFS, 20kHz input has 1dB reduction in THD+N. RMS jitter > 40kHz, DRE enabled",,1,,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-198,BCLK Inactive Edge to LRCLK Delay,t CLKSYNC,,,,28,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+HZ06-PSPEC2-199,DIN to BCLK Active Edge Setup Time,t SETUP,,4,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-1109,tSETUP_din_bclk,HZ06-MVPATE-1109,tSETUP_din_bclk,8435
+,,,,,,,,,HZ06-MVPHUB-1129,tSETUP_din_bclk_Hi,HZ06-MVPATE-1129,tSETUP_din_bclk_Hi,8565
+,,,,,,,,,HZ06-MVPHUB-1119,tSETUP_din_bclk_Lo,HZ06-MVPATE-1119,tSETUP_din_bclk_Lo,8500
+HZ06-PSPEC2-200,DIN to BCLK Active Edge Hold Time,t HOLD,,4,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-1111,tHOLD_din_bclk,HZ06-MVPATE-1111,tHOLD_din_bclk,8440
+,,,,,,,,,HZ06-MVPHUB-1131,tHOLD_din_bclk_Hi,HZ06-MVPATE-1131,tHOLD_din_bclk_Hi,8570
+,,,,,,,,,HZ06-MVPHUB-1121,tHOLD_din_bclk_Lo,HZ06-MVPATE-1121,tHOLD_din_bclk_Lo,8505
+HZ06-PSPEC2-201,BCLK or LRCLK Rise and Fall Times,"t r , t f","C L  = 30pF, Normal drive mode",,5,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+HZ06-PSPEC2-202,BCLK Cycle Time,t BCLK,,80,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1107,tBCLKH,HZ06-MVPATE-1107,tBCLKH,8425
+,,,,,,,,,HZ06-MVPHUB-1127,tBCLKH_Hi,HZ06-MVPATE-1127,tBCLKH_Hi,8555
+,,,,,,,,,HZ06-MVPHUB-1117,tBCLKH_Lo,HZ06-MVPATE-1117,tBCLKH_Lo,8490
+,,,,,,,,,HZ06-MVPHUB-1108,tBCLKL,HZ06-MVPATE-1108,tBCLKL,8430
+,,,,,,,,,HZ06-MVPHUB-1128,tBCLKL_Hi,HZ06-MVPATE-1128,tBCLKL_Hi,8560
+,,,,,,,,,HZ06-MVPHUB-1118,tBCLKL_Lo,HZ06-MVPATE-1118,tBCLKL_Lo,8495
+HZ06-PSPEC2-203,BCLK Duty Cycle,DC,,40,,60,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1107,tBCLKH,HZ06-MVPATE-1107,tBCLKH,8425
+,,,,,,,,,HZ06-MVPHUB-1127,tBCLKH_Hi,HZ06-MVPATE-1127,tBCLKH_Hi,8555
+,,,,,,,,,HZ06-MVPHUB-1117,tBCLKH_Lo,HZ06-MVPATE-1117,tBCLKH_Lo,8490
+,,,,,,,,,HZ06-MVPHUB-1108,tBCLKL,HZ06-MVPATE-1108,tBCLKL,8430
+,,,,,,,,,HZ06-MVPHUB-1128,tBCLKL_Hi,HZ06-MVPATE-1128,tBCLKL_Hi,8560
+,,,,,,,,,HZ06-MVPHUB-1118,tBCLKL_Lo,HZ06-MVPATE-1118,tBCLKL_Lo,8495
+HZ06-PSPEC2-204,LRCLK to BCLK Active Edge Setup Time,t SYNCSET,,4,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1110,tSYNCSET_lrclk_bclk,HZ06-MVPATE-1110,tSYNCSET_lrclk_bclk,8445 8455
+,,,,,,,,,HZ06-MVPHUB-1130,tSYNCSET_lrclk_bclk_Hi,HZ06-MVPATE-1130,tSYNCSET_lrclk_bclk_Hi,8575 8585
+,,,,,,,,,HZ06-MVPHUB-1120,tSYNCSET_lrclk_bclk_Lo,HZ06-MVPATE-1120,tSYNCSET_lrclk_bclk_Lo,8510 8520
+HZ06-PSPEC2-205,LRCLK to BCLK Active Edge Hold Time,t SYNCHOLD,,4,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1112,tSYNCHOLD_lrclk_bclk,HZ06-MVPATE-1112,tSYNCHOLD_lrclk_bclk,8450 8560
+,,,,,,,,,HZ06-MVPHUB-1132,tSYNCHOLD_lrclk_bclk_Hi,HZ06-MVPATE-1132,tSYNCHOLD_lrclk_bclk_Hi,8580 8590
+,,,,,,,,,HZ06-MVPHUB-1122,tSYNCHOLD_lrclk_bclk_Lo,HZ06-MVPATE-1122,tSYNCHOLD_lrclk_bclk_Lo,8515 8525
+HZ06-PSPEC2-206,DIN to BCLK Active Edge Setup Time,t SETUP,,4,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1109,tSETUP_din_bclk,HZ06-MVPATE-1109,tSETUP_din_bclk,8435
+,,,,,,,,,HZ06-MVPHUB-1129,tSETUP_din_bclk_Hi,HZ06-MVPATE-1129,tSETUP_din_bclk_Hi,8565
+,,,,,,,,,HZ06-MVPHUB-1119,tSETUP_din_bclk_Lo,HZ06-MVPATE-1119,tSETUP_din_bclk_Lo,8500
+HZ06-PSPEC2-207,DIN to BCLK Active Edge Hold Time,t HOLD,,4,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1111,tHOLD_din_bclk,HZ06-MVPATE-1111,tHOLD_din_bclk,8440
+,,,,,,,,,HZ06-MVPHUB-1131,tHOLD_din_bclk_Hi,HZ06-MVPATE-1131,tHOLD_din_bclk_Hi,8570
+,,,,,,,,,HZ06-MVPHUB-1121,tHOLD_din_bclk_Lo,HZ06-MVPATE-1121,tHOLD_din_bclk_Lo,8505
+HZ06-PSPEC2-208,BCLK Inactive Edge to DOUT Delay,t CLKTX,,,,28,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1114,tCLKTX 1.8V,HZ06-MVPATE-1114,tCLKTX 1.8V,8415
+,,,,,,,,,HZ06-MVPHUB-1135,tCLKTX_Hi,HZ06-MVPATE-1135,tCLKTX_Hi,8545
+,,,,,,,,,HZ06-MVPHUB-1125,tCLKTX_Lo,HZ06-MVPATE-1125,tCLKTX_Lo,8480
+HZ06-PSPEC2-209,BCLK Active Edge to DOUT HIZ Delay,t HIZ,,4,,30,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1115,tHIZ,HZ06-MVPATE-1115,tHIZ,8410
+,,,,,,,,,HZ06-MVPHUB-1136,tHIZ_Hi,HZ06-MVPATE-1136,tHIZ_Hi,8540
+,,,,,,,,,HZ06-MVPHUB-1126,tHIZ_Lo,HZ06-MVPATE-1126,tHIZ_Lo,8475
+HZ06-PSPEC2-210,BCLK Inactive Edge to DOUT Active Delay,t ACTV,,0,,28,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1113,tACTV 1.8V,HZ06-MVPATE-1113,tACTV 1.8V,8405
+,,,,,,,,,HZ06-MVPHUB-1134,tACTV_Hi,HZ06-MVPATE-1134,tACTV_Hi,8535
+,,,,,,,,,HZ06-MVPHUB-1124,tACTV_Lo,HZ06-MVPATE-1124,tACTV_Lo,8470
+HZ06-PSPEC2-211,ICC to BCLK Active Edge Setup Time,t SETUP,,4,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1900,ICC to BCLK Active Edge Setup Time,HZ06-MVPATE-1932,tSETUP,9810
+HZ06-PSPEC2-212,ICC to BCLK Active Edge Hold Time,t HOLD,,4,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1905,ICC to BCLK Active Edge Hold Time,HZ06-MVPATE-1933,tHOLD,9815
+HZ06-PSPEC2-213,BCLK Inactive Edge to ICC Delay,t CLKTX,,,,28,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1901,BCLK Inactive Edge to ICC Delay,HZ06-MVPATE-1931,tCLKTX_riseBCLK,9927
+,,,,,,,,,HZ06-MVPHUB-1908,BCLK Inactive Edge to ICC Delay,HZ06-MVPATE-1936,tCLKTX_fallBCLK,9930
+HZ06-PSPEC2-214,BCLK Active Edge to ICC HIZ Delay,t HIZ,,4,,30,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1902,BCLK Active Edge to ICC HIZ Delay,HZ06-MVPATE-1930,tHIZ_riseBCLK,9928
+,,,,,,,,,HZ06-MVPHUB-1907,BCLK Active Edge to ICC HIZ Delay,HZ06-MVPATE-1935,tHIZ_fallBCLK,9931
+HZ06-PSPEC2-215,BCLK Inactive Edge to ICC Active Delay,t ACTV,,0,,28,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1903,BCLK Inactive Edge to ICC Active Delay,HZ06-MVPATE-1929,tACTV_riseBCLK,9926
+,,,,,,,,,HZ06-MVPHUB-1906,BCLK Inactive Edge to ICC Active Delay,HZ06-MVPATE-1934,tACTV_fallBCLK,9929
+HZ06-PSPEC2-217,PDMRXCLK Frequency,1/t PDMRXCLK,,2.681,3.072,3.226,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1931,swingHi_2p618,HZ06-MVPATE-1964,swingHi_2p618,7505
+,,,,,,,,,HZ06-MVPHUB-1932,swingLo_3p226,HZ06-MVPATE-1965,swingLo_3p226,7510
+HZ06-PSPEC2-218,PDMRXCLK High Time,t PDMRXCLK_HIGH,,80,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1745,t_high_+_1p8V,HZ06-MVPATE-1776,t_high_+_1p8V,9230
+,,,,,,,,,HZ06-MVPHUB-1744,t_high_-_rx_1p8V,HZ06-MVPATE-1775,t_high_-_rx_1p8V,9250
+HZ06-PSPEC2-219,PDMRXCLK Low Time,t PDMRXCLK_LOW,,80,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1747,t_low_+_rx_1p8V,HZ06-MVPATE-1778,t_low_+_rx_1p8V,9205
+,,,,,,,,,HZ06-MVPHUB-1746,t_low_-_rx_1p8V,HZ06-MVPATE-1777,t_low_-_rx_1p8V,9215
+HZ06-PSPEC2-220,Maximum PDMRXCLK Source Clock Low-Frequency Jitter,,"Maximum allowable jitter before -20dBFS, 20kHz input has 1dB reduction in THD+N, RMS jitter ≤ 40kHz, DRE enabled",,0.2,,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-221,Maximum PDMRXCLK Source Clock High-Frequency Jitter,,"Maximum allowable jitter before -60dBFS, 20kHz input has 1dB reduction in THD+N, RMS jitter > 40kHz, DRE enabled",,1,,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-253,Full Scale PDM Input Level,,Modulation index for full-scale DAC output,,50,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-222,PDMRXDAT to PDMRXCLK Setup Time,t SETUP,,10,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1740,tsetup_+_rx_1p8V,HZ06-MVPATE-1771,tsetup_+_rx_1p8V,9220
+,,,,,,,,,HZ06-MVPHUB-1741,tsetup_-_rx_1p8V,HZ06-MVPATE-1772,tsetup_-_rx_1p8V,9240
+HZ06-PSPEC2-223,PDMRXCLK to PDMRXDAT Hold Time,t HOLD,,0,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1742,thold_+_rx_1p8V,HZ06-MVPATE-1773,thold_+_rx_1p8V,9225
+,,,,,,,,,HZ06-MVPHUB-1743,thold_-_rx_1p8V,HZ06-MVPATE-1774,thold_-_rx_1p8V,9245
+HZ06-PSPEC2-225,PDMTXCLK Frequency,1/t PDMTXCLK,,2.681,3.072,3.226,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
+,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
+,,,,,,,,,HZ06-MVPHUB-665,ATPG scan - SBF,HZ06-MVPATE-665,ATPG scan - SBF,725
+,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
+HZ06-PSPEC2-226,PDMTXCLK High Time,t PDMTXCLK_HIGH,,80,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1752,tPDMTXCLK_HIGH,HZ06-MVPATE-1783,tPDMTXCLK_HIGH,9651
+HZ06-PSPEC2-227,PDMTXCLK Low Time,t PDMTXCLK_LOW,,80,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1753,tPDMTXCLK_LOW,HZ06-MVPATE-1784,tPDMTXCLK_LOW,9652
+HZ06-PSPEC2-228,Maximum RMS PDMTXCLK Jitter,,,,2,,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-229,PDMTXCLK to PDMTXDAT Delay,t DD,,0,,30,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1750,tDD_0f_tx,HZ06-MVPATE-1781,tDD_0f_tx,9649
+,,,,,,,,,HZ06-MVPHUB-1749,tDD_0r_tx,HZ06-MVPATE-1780,tDD_0r_tx,9648
+,,,,,,,,,HZ06-MVPHUB-1748,tDD_1f_tx,HZ06-MVPATE-1779,tDD_1f_tx,9647
+,,,,,,,,,HZ06-MVPHUB-1751,tDD_1r_tx,HZ06-MVPATE-1782,tDD_1r_tx,9650
+HZ06-PSPEC2-233,Serial Clock Frequency,f SCL,,0,,1000,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-656,Release from /RESET,HZ06-MVPATE-656,Turn_on_time,620
+HZ06-PSPEC2-234,Bus Free Time Between STOP and START Conditions,t BUF,,0.5,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1163,t_BUF,HZ06-MVPATE-1163,t_BUF,8670
+HZ06-PSPEC2-235,Hold Time (Repeated) START Condition,"t HD,STA",,0.26,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1160,"t_HD, STA",HZ06-MVPATE-1160,"t_HD, STA",8655
+HZ06-PSPEC2-236,SCL Pulse-Width Low,t LOW,,0.5,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1153,t_LOW,HZ06-MVPATE-1153,t_LOW,8650
+HZ06-PSPEC2-237,SCL Pulse-Width High,t HIGH,,0.26,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1154,t_HIGH,HZ06-MVPATE-1154,t_HIGH,8645
+HZ06-PSPEC2-238,Setup Time for a Repeated START Condition,"t SU,STA",,0.26,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1159,"t_SU, STA",HZ06-MVPATE-1159,"t_SU, STA",8665
+HZ06-PSPEC2-239,Data Hold Time,"t HD,DAT",,0,,900,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1156,"t_HD, DAT",HZ06-MVPATE-1156,"t_HD, DAT",8615 8620
+HZ06-PSPEC2-240,Data Setup Time,"t SU,DAT",,50,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1155,"t_SU, DAT",HZ06-MVPATE-1155,"t_SU, DAT",8605 8610
+HZ06-PSPEC2-241,SDA and SCL Receiving Rise Time,t R,(Note 2),20 + 0.1C B,,120,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1157,t_R,HZ06-MVPATE-1157,t_R,8605
+HZ06-PSPEC2-242,SDA and SCL Receiving Fall Time,t F,(Note 2),20 + 0.1C B,,120,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1158,t_F,HZ06-MVPATE-1158,t_F,8610
+HZ06-PSPEC2-243,SDA Transmitting Fall Time,t F,V DVDD  = 1.71V,20,,120,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1927,Tf(Tx)_270pF,HZ06-MVPATE-1960,Tf(Tx)_270pF,8675
+HZ06-PSPEC2-244,Setup Time for STOP Condition,"t SU,STO",,0.26,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1162,"t_SU, STO",HZ06-MVPATE-1162,"t_SU, STO",8660
+HZ06-PSPEC2-245,Bus Capacitance,C B,,,,550,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1927,Tf(Tx)_270pF,HZ06-MVPATE-1960,Tf(Tx)_270pF,8675
+,,,,,,,,,HZ06-MVPHUB-1929,Tf_Rx_Fall_270pF,HZ06-MVPATE-1962,Tf_Rx_Fall_270pF,8630
+,,,,,,,,,HZ06-MVPHUB-1928,Tr_Rx_Rise_270pF,HZ06-MVPATE-1961,Tr_Rx_Rise_270pF,8625
+HZ06-PSPEC2-246,Pulse Width of Suppressed Spike,t SP,,0,,50,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1161,t_SP,HZ06-MVPATE-1161,t_SP,8680
+HZ06-PSPEC2-248,Minimum /RESET Low Time,t RESET_LOW,Minimum low time for /RESET to ensure device shutdown,,1,,VI - Internal Design Target,Yes,,,,,
+HZ06-PSPEC2-249,Release from /RESET,t I2C_READY,Time from rising edge of /RESET to I 2 C communication available,,,0.5,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-656,Release from /RESET,HZ06-MVPATE-656,Turn_on_time,620
