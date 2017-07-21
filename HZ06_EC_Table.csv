@@ -152,7 +152,7 @@ HZ06-PSPEC2-41,Output Voltage,V PVDD,"Min setting, across specified V VBAT  oper
 ,,,,,,,,,HZ06-MVPHUB-895,*BST_0x0F_Vout%,HZ06-MVPATE-895,*BST_0x0F_Vout%,3157
 ,,,,,,,,,HZ06-MVPHUB-896,*BST_0x10_Vout%,HZ06-MVPATE-896,*BST_0x10_Vout%,3167
 ,,,,,,,,,HZ06-MVPHUB-897,*BST_0x11_Vout%,HZ06-MVPATE-897,*BST_0x11_Vout%,3177
-,,,,,,,,,HZ06-MVPHUB-898,*BST_0x12_Vout%,HZ06-MVPATE-898,*BST_0x12_Vout%,10425
+,,,,,,,,,HZ06-MVPHUB-898,*BST_0x12_Vout%,HZ06-MVPATE-898,*BST_0x12_Vout%,3187
 ,,,,,,,,,HZ06-MVPHUB-899,*BST_0x13_Vout%,HZ06-MVPATE-899,*BST_0x13_Vout%,3197
 ,,,,,,,,,HZ06-MVPHUB-900,*BST_0x14_Vout%,HZ06-MVPATE-900,*BST_0x14_Vout%,3207
 ,,,,,,,,,HZ06-MVPHUB-901,*BST_0x15_Vout%,HZ06-MVPATE-901,*BST_0x15_Vout%,3217
@@ -221,7 +221,7 @@ HZ06-PSPEC2-42,Output Voltage Step Size,,,,0.125,,"IV - Not Production Tested, C
 ,,,,,,,,,HZ06-MVPHUB-870,*BST_0x11_Vout,HZ06-MVPATE-870,*BST_0x11_Vout,3176
 ,,,,,,,,,HZ06-MVPHUB-897,*BST_0x11_Vout%,HZ06-MVPATE-897,*BST_0x11_Vout%,3177
 ,,,,,,,,,HZ06-MVPHUB-871,*BST_0x12_Vout,HZ06-MVPATE-871,*BST_0x12_Vout,3186
-,,,,,,,,,HZ06-MVPHUB-898,*BST_0x12_Vout%,HZ06-MVPATE-898,*BST_0x12_Vout%,10425
+,,,,,,,,,HZ06-MVPHUB-898,*BST_0x12_Vout%,HZ06-MVPATE-898,*BST_0x12_Vout%,3187
 ,,,,,,,,,HZ06-MVPHUB-872,*BST_0x13_Vout,HZ06-MVPATE-872,*BST_0x13_Vout,3196
 ,,,,,,,,,HZ06-MVPHUB-899,*BST_0x13_Vout%,HZ06-MVPATE-899,*BST_0x13_Vout%,3197
 ,,,,,,,,,HZ06-MVPHUB-873,*BST_0x14_Vout,HZ06-MVPATE-873,*BST_0x14_Vout,3206
@@ -489,11 +489,11 @@ HZ06-PSPEC2-135,DC Offset Voltage,,"Z SPK  = 8Ω+33μH or 4Ω+33μH, 3.7Hz DC 
 ,,,,,,,,,HZ06-MVPHUB-666,ATPG scan - TDF,HZ06-MVPATE-666,ATPG scan - TDF,730
 HZ06-PSPEC2-136,DC Offset Voltage,,"Z SPK  = 8Ω+33μH or 4Ω+33μH, DC blocking filter disabled",,TBD (1σ),,"IV - Not Production Tested, Characterized by ATE",No,HZ06-MVPHUB-1001,VMON_Offset,HZ06-MVPATE-1001,VMON_Offset,4575
 HZ06-PSPEC2-137,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-15kHz, unweighted, boost on",,80,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1003,"VMON_DNR_8p5V(-60dB, 22-20KHz)",HZ06-MVPATE-1003,"VMON_DNR_8p5V(-60dB, 22-20KHz)",7340
-HZ06-PSPEC2-325,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-15kHz, unweighted, boost bypassed",,78,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1846,"VMON_DNR_bst_bypassed_3p7V(-60dB, 22-20KHz)",HZ06-MVPATE-1953,"VMON_DNR_bst_bypassed_3p7V(-60dB, 22-20KHz)",7344
+HZ06-PSPEC2-325,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-15kHz, unweighted, boost bypassed",,78,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1846,"VMON_DNR_bst_bypassed_3p7V(-60dB, 22-20KHz)",HZ06-MVPATE-1953,"VMON_DNR_bst_bypassed_3p7V(-60dB, 22-20KHz)",7340
 HZ06-PSPEC2-138,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-20kHz, unweighted, boost on",,79,,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1003,"VMON_DNR_8p5V(-60dB, 22-20KHz)",HZ06-MVPATE-1003,"VMON_DNR_8p5V(-60dB, 22-20KHz)",7340
-HZ06-PSPEC2-326,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-20kHz, unweighted, boost bypassed",,77,,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1846,"VMON_DNR_bst_bypassed_3p7V(-60dB, 22-20KHz)",HZ06-MVPATE-1953,"VMON_DNR_bst_bypassed_3p7V(-60dB, 22-20KHz)",7344
+HZ06-PSPEC2-326,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-20kHz, unweighted, boost bypassed",,77,,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1846,"VMON_DNR_bst_bypassed_3p7V(-60dB, 22-20KHz)",HZ06-MVPATE-1953,"VMON_DNR_bst_bypassed_3p7V(-60dB, 22-20KHz)",7340
 HZ06-PSPEC2-139,Total Harmonic Distortion + Noise,THD+N,"f = 1kHz, speaker voltage = 3V RMS , boost on",,-65,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1002,VMON_THD+N_8p5V,HZ06-MVPATE-1002,VMON_THD+N_8p5V,7335
-HZ06-PSPEC2-327,Total Harmonic Distortion + Noise,THD+N,"f = 1kHz, speaker voltage = 3V RMS , boost bypassed",,TBD,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1847,VMON_THD+N_bst_bypass_3p7V,HZ06-MVPATE-1877,VMON_THD+N_bst_bypass_3p7V,7342
+HZ06-PSPEC2-327,Total Harmonic Distortion + Noise,THD+N,"f = 1kHz, speaker voltage = 3V RMS , boost bypassed",,TBD,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1847,VMON_THD+N_bst_bypass_3p7V,HZ06-MVPATE-1877,VMON_THD+N_bst_bypass_3p7V,7335
 HZ06-PSPEC2-140,Absolute Accuracy,,T A  = +25°C,,+/-1,+/-3,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-999,V_sns_abs_acc,HZ06-MVPATE-999,V_sns_abs_acc,4565
 HZ06-PSPEC2-141,Passband Ripple,,f ≤ 0.42fs,-0.1,,0.1,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",No,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
 ,,,,,,,,,HZ06-MVPHUB-664,ATPG scan - SAF,HZ06-MVPATE-664,ATPG scan - SAF,720
@@ -531,15 +531,15 @@ HZ06-PSPEC2-149,High Pass Cutoff Frequency,,"-3dB Limit, MEAS_V_DCBLK[1:0] = 11
 HZ06-PSPEC2-150,Resolution,,,,16,,VI - Internal Design Target,Yes,,,,,
 HZ06-PSPEC2-151,Sample Rate,,,4,,48,VI - Internal Design Target,Yes,,,,,
 HZ06-PSPEC2-152,Current Range,,,,+/-3,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-982,I_sns_gain_6A,HZ06-MVPATE-982,I_sns_gain_6A,4440
-HZ06-PSPEC2-153,DC Offset Current,,"Z SPK  = 8Ω+33μH or 4Ω+33μH, 3.7Hz DC blocking filter enabled",,+/-0.12,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-1919,IMON_DC Offset Current(DC blocking filter enabled),HZ06-MVPATE-1952,IMON_DC Offset Current(DC blocker enabled),7385
+HZ06-PSPEC2-153,DC Offset Current,,"Z SPK  = 8Ω+33μH or 4Ω+33μH, 3.7Hz DC blocking filter enabled",,+/-0.12,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-1919,IMON_DC Offset Current(DC blocking filter enabled),HZ06-MVPATE-1952,IMON_DC Offset Current(DC blocker enabled),735
 HZ06-PSPEC2-154,DC Offset Current,,"Z SPK  = 8Ω+33μH or 4Ω+33μH, DC blocking filter disabled",,TBD (1σ),,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",No,HZ06-MVPHUB-970,IMON_ Offset,HZ06-MVPATE-970,IMON_ Offset,4335
 ,,,,,,,,,HZ06-MVPHUB-1920,IMON_DC Offset Current,HZ06-MVPATE-1951,IMON_DC Offset Current,7380
 HZ06-PSPEC2-155,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-15kHz, unweighted, boost on",,78,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-986,IMON_Dynamic Range,HZ06-MVPATE-986,IMON_Dynamic Range,7350
-HZ06-PSPEC2-328,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-15kHz, unweighted, boost bypassed",,76,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1897,IMON_DNR_boost_bypassed_20khz,HZ06-MVPATE-1925,IMON_DNR_boost_bypassed_20khz,7360
+HZ06-PSPEC2-328,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-15kHz, unweighted, boost bypassed",,76,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1897,IMON_DNR_boost_bypassed_20khz,HZ06-MVPATE-1925,IMON_DNR_boost_bypassed_20khz,7350
 HZ06-PSPEC2-156,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-20kHz, unweighted, boost on",,76,,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-986,IMON_Dynamic Range,HZ06-MVPATE-986,IMON_Dynamic Range,7350
-HZ06-PSPEC2-329,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-20kHz, unweighted, boost bypassed",,74,,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1897,IMON_DNR_boost_bypassed_20khz,HZ06-MVPATE-1925,IMON_DNR_boost_bypassed_20khz,7360
+HZ06-PSPEC2-329,Dynamic Range,DNR,"f = 1kHz, AC measurement bandwidth = 22Hz-20kHz, unweighted, boost bypassed",,74,,"IV - Not Production Tested, Characterized by ATE",Yes,HZ06-MVPHUB-1897,IMON_DNR_boost_bypassed_20khz,HZ06-MVPATE-1925,IMON_DNR_boost_bypassed_20khz,7350
 HZ06-PSPEC2-157,Total Harmonic Distortion + Noise,THD+N,"f = 1kHz, speaker current = 375mA RMS , boost on",,-59,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-985,IMON_THD+N,HZ06-MVPATE-985,IMON_THD+N_Boost_On_20khz,7345
-HZ06-PSPEC2-330,Total Harmonic Distortion + Noise,THD+N,"f = 1kHz, speaker current = 375mA RMS , boost bypassed",,TBD,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1896,IMON_THD + N Boost bypassed,HZ06-MVPATE-1924,IMON_THD + N Boost bypassed,7355
+HZ06-PSPEC2-330,Total Harmonic Distortion + Noise,THD+N,"f = 1kHz, speaker current = 375mA RMS , boost bypassed",,TBD,,"VII - Production Tested, Internal Only",Yes,HZ06-MVPHUB-1896,IMON_THD + N Boost bypassed,HZ06-MVPATE-1924,IMON_THD + N Boost bypassed,7345
 HZ06-PSPEC2-158,Absolute Accuracy,,T A  = +25°C,,+/-2,+/-3,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-983,I_sns_abs_acc,HZ06-MVPATE-983,I_sns_abs_acc,4460
 HZ06-PSPEC2-159,Voltage and Current Accuracy Drift Tracking,,"T A  = 0°C to 85°C, normalized to 25°C",,0.4,,VI - Internal Design Target,Yes,,,,,
 HZ06-PSPEC2-160,Voltage to Current Crosstalk,,I/V data on PCM interface,,-60,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-755,IV_Xtalk_Post,HZ06-MVPATE-755,IV_Xtalk_Post,4200
@@ -725,8 +725,8 @@ HZ06-PSPEC2-217,PDMRXCLK Frequency,1/t PDMRXCLK,,2.681,3.072,3.226,"II - Product
 ,,,,,,,,,HZ06-MVPHUB-1932,swingLo_3p226,HZ06-MVPATE-1965,swingLo_3p226,7510
 HZ06-PSPEC2-218,PDMRXCLK High Time,t PDMRXCLK_HIGH,,80,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1745,t_high_+_1p8V,HZ06-MVPATE-1776,t_high_+_1p8V,9230
 ,,,,,,,,,HZ06-MVPHUB-1744,t_high_-_rx_1p8V,HZ06-MVPATE-1775,t_high_-_rx_1p8V,9250
-HZ06-PSPEC2-219,PDMRXCLK Low Time,t PDMRXCLK_LOW,,80,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1747,t_low_+_rx_1p8V,HZ06-MVPATE-1778,t_low_+_rx_1p8V,9205
-,,,,,,,,,HZ06-MVPHUB-1746,t_low_-_rx_1p8V,HZ06-MVPATE-1777,t_low_-_rx_1p8V,9215
+HZ06-PSPEC2-219,PDMRXCLK Low Time,t PDMRXCLK_LOW,,80,,,"II - Production Tested @ Room Temp, Characterized @ Multiple Temps",Yes,HZ06-MVPHUB-1747,t_low_+_rx_1p8V,HZ06-MVPATE-1778,t_low_+_rx_1p8V,
+,,,,,,,,,HZ06-MVPHUB-1746,t_low_-_rx_1p8V,HZ06-MVPATE-1777,t_low_-_rx_1p8V,
 HZ06-PSPEC2-220,Maximum PDMRXCLK Source Clock Low-Frequency Jitter,,"Maximum allowable jitter before -20dBFS, 20kHz input has 1dB reduction in THD+N, RMS jitter ≤ 40kHz, DRE enabled",,0.2,,VI - Internal Design Target,Yes,,,,,
 HZ06-PSPEC2-221,Maximum PDMRXCLK Source Clock High-Frequency Jitter,,"Maximum allowable jitter before -60dBFS, 20kHz input has 1dB reduction in THD+N, RMS jitter > 40kHz, DRE enabled",,1,,VI - Internal Design Target,Yes,,,,,
 HZ06-PSPEC2-253,Full Scale PDM Input Level,,Modulation index for full-scale DAC output,,50,,"IIsc - Production Tested via Scan @ Room Temp, Characterized via Scan @ Multiple Temps",Yes,HZ06-MVPHUB-667,ATPG scan - DBF,HZ06-MVPATE-667,ATPG scan - DBF,735
